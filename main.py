@@ -8,6 +8,7 @@ import sqlalchemy
 from datetime import datetime
 
 
+# Question 1: White blood cells
 # Connect to MySQL database
 MYSQL_HOST = "mysql-1.cda.hhs.se"
 MYSQL_USERNAME = "be903"
@@ -74,9 +75,9 @@ for patient_id in classification_ids:
 with open("assignment2.json", "w") as f:
     json.dump(json_data, f, indent=2)
 
-# Drop unnecessary columns
 
-# patient_df = patient_df.drop(['admission_date', 'days_before_discharge'], axis=1)
+
+# Question 2: Patient survival prediction
 
 
 # Perform one-hot encoding on the 'language' column
@@ -101,14 +102,7 @@ patient_df["do_not_resuscitate"] = (
 )
 
 # Split data into features (X) and target (y)
-X = patient_df.drop(
-    [
-        "id",
-        "doctors_2_months_survival_prediction",
-        "doctors_6_months_survival_prediction",
-    ],
-    axis=1,
-)
+X = patient_df[['age', 'gender', 'disease_category', 'disease_class', 'do_not_resuscitate', 'days_before_discharge']]
 y = (
     patient_df["doctors_2_months_survival_prediction"] < 0.5
 )  # Assuming doctors' 2-month prediction < 0.5 means the patient died
