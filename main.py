@@ -6,6 +6,12 @@ import matplotlib.pyplot as plt
 import json
 import sqlalchemy
 from datetime import datetime
+from imblearn.over_sampling import SMOTE
+from imblearn.pipeline import Pipeline
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import GridSearchCV
 
 
 # Question 1: White blood cells
@@ -26,6 +32,10 @@ exam_df = pd.read_sql(exam_query, cnx)
 # Fetch data from Patient table
 patient_query = "SELECT * FROM Patient"
 patient_df = pd.read_sql(patient_query, cnx)
+
+# Fetch data from Study table
+study_query = "SELECT * FROM Study"
+study_df = pd.read_sql(study_query, cnx)
 
 # Close database connection
 cnx.dispose()
@@ -76,7 +86,6 @@ with open("assignment2.json", "w") as f:
     json.dump(json_data, f, indent=2)
 
 
-
 # Question 2: Patient survival prediction
 
 
@@ -101,11 +110,55 @@ patient_df["do_not_resuscitate"] = (
     patient_df["do_not_resuscitate"].fillna(-1).astype(int)
 )
 
-# Split data into features (X) and target (y)
-X = patient_df[['age', 'gender', 'disease_category', 'disease_class', 'do_not_resuscitate', 'days_before_discharge']]
-y = (
-    patient_df["doctors_2_months_survival_prediction"] < 0.5
-)  # Assuming doctors' 2-month prediction < 0.5 means the patient died
+
+exam_df['value'] = pd.to_numeric(exam_df['value'], errors='coerce')
+
+# Extract Features from PatientExamination
+measurements = [
+    "Arterial Blood PH",
+    "Bilirubin Level",
+    "Blood Urea Nitrogen",
+    "Glucose",
+    "Heart Rate",
+    "Mean Arterial Blood Pressure",
+    "Respiration Rate",
+    "Serum Albumin",
+    "Serum Creatinine Level",
+    "White Blood Cell Count",
+]
+extracted_features = pd.DataFrame(index=exam_df["patient_id"].unique())
+for measurement in measurements:
+    temp_df = exam_df[exam_df["measurement"] == measurement].pivot(
+        index="patient_id", columns="measurement", values="value"
+    )
+    extracted_features = extracted_features.join(temp_df, how="outer")
+extracted_features.columns = [
+    col.lower().replace(" ", "_") for col in extracted_features.columns
+]
+extracted_features.reset_index(inplace=True)
+extracted_features.rename(columns={"index": "patient_id"}, inplace=True)
+
+# Merge Extracted Features with Patient and Study Data
+df = pd.merge(
+    patient_df, extracted_features, left_on="id", right_on="patient_id", how="left"
+)
+df = pd.merge(df, study_df, left_on="id", right_on="patient_id", how="left")
+
+# Data Preparation
+df["gender"] = df["gender"].map({"male": 0, "female": 1})  # Encode gender
+
+# Feature Selection
+features = [
+    "age",
+    "gender",
+    "disease_category",
+    "disease_class",
+    "days_before_discharge",
+] + extracted_features.columns.tolist()[
+    1:
+]  # Exclude 'patient_id'
+X = df[features]
+y = df["died_in_hospital"]
 
 # Identify categorical columns
 cat_cols = X.select_dtypes(include=["object"]).columns
@@ -121,9 +174,13 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
+best_params = {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100, 
+               'random_state': 42}
 
-# Create and train the model
-rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
+# Initialize the model with the best parameters
+rf_model = RandomForestClassifier(**best_params)
+
+# Fit the model to the training data
 rf_model.fit(X_train, y_train)
 
 # Make predictions on test set
