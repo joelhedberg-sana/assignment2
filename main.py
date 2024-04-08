@@ -12,6 +12,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
+import numpy as np
 
 
 # Question 1: White blood cells
@@ -191,3 +192,17 @@ print("Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
+
+# Most important features
+importances = rf_model.feature_importances_
+indices = np.argsort(importances)[::-1]
+features = X.columns
+
+# Plot the feature importances of the forest
+plt.figure(figsize=(12, 6))
+plt.title("Feature Importances")
+plt.bar(range(X.shape[1]), importances[indices], align="center")
+plt.xticks(range(X.shape[1]), [features[i] for i in indices], rotation=90)
+plt.xlim([-1, X.shape[1]])
+plt.show()
+
