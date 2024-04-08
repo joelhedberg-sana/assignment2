@@ -87,6 +87,7 @@ with open("assignment2.json", "w") as f:
     json.dump(json_data, f, indent=2)
 
 
+
 # Question 2: Patient survival prediction
 
 
@@ -175,7 +176,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-best_params = {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100, 
+best_params = {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 100, 
                'random_state': 42}
 
 # Initialize the model with the best parameters
@@ -198,11 +199,8 @@ importances = rf_model.feature_importances_
 indices = np.argsort(importances)[::-1]
 features = X.columns
 
-# Plot the feature importances of the forest
-plt.figure(figsize=(12, 6))
-plt.title("Feature Importances")
-plt.bar(range(X.shape[1]), importances[indices], align="center")
-plt.xticks(range(X.shape[1]), [features[i] for i in indices], rotation=90)
-plt.xlim([-1, X.shape[1]])
-plt.show()
-
+# Print feature ranking
+""" print("\nFeature ranking:")
+for f in range(X.shape[1]):
+    print(f"{f + 1}. {features[indices[f]]} ({importances[indices[f]]})")
+ """
