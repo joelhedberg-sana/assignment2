@@ -6,12 +6,9 @@ import matplotlib.pyplot as plt
 import json
 import sqlalchemy
 from datetime import datetime
-from imblearn.over_sampling import SMOTE
-from imblearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import GridSearchCV
 import numpy as np
 
 
@@ -87,9 +84,7 @@ with open("assignment2.json", "w") as f:
     json.dump(json_data, f, indent=2)
 
 
-
 # Question 2: Patient survival prediction
-
 
 # Perform one-hot encoding on the 'language' column
 language_dummies = pd.get_dummies(patient_df["language"], prefix="language")
@@ -113,7 +108,7 @@ patient_df["do_not_resuscitate"] = (
 )
 
 
-exam_df['value'] = pd.to_numeric(exam_df['value'], errors='coerce')
+exam_df["value"] = pd.to_numeric(exam_df["value"], errors="coerce")
 
 # Extract Features from PatientExamination
 measurements = [
@@ -176,8 +171,14 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-best_params = {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 100, 
-               'random_state': 42}
+best_params = {
+    "max_depth": None,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1,
+    "min_samples_split": 5,
+    "n_estimators": 100,
+    "random_state": 42,
+}
 
 # Initialize the model with the best parameters
 rf_model = RandomForestClassifier(**best_params)
