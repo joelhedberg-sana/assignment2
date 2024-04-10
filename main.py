@@ -124,7 +124,15 @@ def prepare_data_for_model(patient_df, exam_df, study_df):
 def train_and_evaluate_model(df):
     """Train the model and evaluate its performance."""
     features = [
-        col for col in df.columns if col not in ["id", "patient_id", "died_in_hospital"]
+        col
+        for col in df.columns
+        if col
+        not in [
+            "id",
+            "patient_id",
+            "died_in_hospital",
+            "death_recorded_after_hospital_discharge",
+        ]
     ]
     X = df[features]
     y = df["died_in_hospital"]
@@ -152,35 +160,39 @@ def train_and_evaluate_model(df):
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred))
 
+    # Further evaluation
+    feature_importances = model.feature_importances_
+    feature_names = X.columns
+    feature_importances_df = pd.DataFrame(
+        {"feature": feature_names, "importance": feature_importances}
+    ).sort_values("importance", ascending=False)
+
+    print("\nFeature Importances:")
+    print(feature_importances_df)
+
     return model
 
 
 def update_json_with_predictions(json_data, model, df):
     """Update the JSON data with the model's predictions."""
     # Prepare data for prediction
-    features = [col for col in df.columns if col not in ['id', 'patient_id', 'died_in_hospital']]
+    features = [
+        col for col in df.columns if col not in ["id", "patient_id", "died_in_hospital"]
+    ]
     X = df[features]
-    
+
     # One-hot encode categorical features
     X = pd.get_dummies(X)
-    
+
     # Add missing (zero-valued) columns
     missing_cols = set(model.feature_names_in_) - set(X.columns)
     for c in missing_cols:
         X[c] = 0
-    
+
     # Ensure the order of column in the test set is in the same order than in train set
     X = X[model.feature_names_in_]
-    
-    predictions = model.predict(X)
-    print(f'Predictions: {predictions}')  # Print predictions
-    
-    # Update JSON data with predictions
-    for i, patient in enumerate(json_data):
-        patient["prediction_accuracy_model"] = int(predictions[i])
-        print(f'Patient after update: {patient}')  # Print patient data after update
 
-    print(f'JSON data after update: {json_data}')  # Print JSON data after update
+    predictions = model.predict(X)
 
 
 def main():
