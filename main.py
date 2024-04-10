@@ -10,10 +10,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
+from sklearn.preprocessing import OneHotEncoder
 
 
-# Question 1: White blood cells
-# Connect to MySQL database
+# Constants and Configuration
 MYSQL_HOST = "mysql-1.cda.hhs.se"
 MYSQL_USERNAME = "be903"
 MYSQL_PASSWORD = "robots"
@@ -21,187 +21,179 @@ MYSQL_SCHEMA = "Survivability"
 CONNECTION_STRING = (
     f"mysql+pymysql://{MYSQL_USERNAME}:{MYSQL_PASSWORD}@{MYSQL_HOST}/{MYSQL_SCHEMA}"
 )
-cnx = sqlalchemy.create_engine(CONNECTION_STRING)
-
-# Fetch data from PatientExamination table
-exam_query = "SELECT patient_id, measurement, value FROM PatientExamination"
-exam_df = pd.read_sql(exam_query, cnx)
-
-# Fetch data from Patient table
-patient_query = "SELECT * FROM Patient"
-patient_df = pd.read_sql(patient_query, cnx)
-
-# Fetch data from Study table
-study_query = "SELECT * FROM Study"
-study_df = pd.read_sql(study_query, cnx)
-
-# Close database connection
-cnx.dispose()
-# Pivot exam_df to get white blood cell count per patient
-wbc_df = exam_df[exam_df["measurement"] == "White Blood Cell Count"].pivot(
-    index="patient_id", columns="measurement", values="value"
-)
-if wbc_df.columns.nlevels > 1:
-    wbc_df.columns = wbc_df.columns.droplevel()  # drop redundant column level
-
-# Plot distribution of white blood cell counts
-plt.figure(figsize=(8, 5))
-plt.hist(wbc_df["White Blood Cell Count"].astype(float), bins=100, edgecolor="black")
-plt.xlabel("White Blood Cell Count")
-plt.ylabel("Frequency")
-plt.title("Distribution of White Blood Cell Counts")
-plt.xlim(0, 125)
-# plt.show()
-# plt.savefig('wbc_distribution.png', dpi=200, bbox_inches='tight')
-
-# Get classification set patient IDs (those with days_before_discharge = 0)
-classification_ids = patient_df[patient_df["days_before_discharge"] > 0]["id"].tolist()
-
-# Create list to store JSON data
-json_data = []
-
-# Loop through classification IDs
-for patient_id in classification_ids:
-
-    # Get rounded white blood cell count if exists, else None
-    if patient_id in wbc_df.index:
-        wbc_count = int(round(float(wbc_df.loc[patient_id, "White Blood Cell Count"])))
-    else:
-        wbc_count = None
-
-    # Append to JSON data
-    json_data.append(
-        {
-            "patient_id": patient_id,
-            "prediction_accuracy_model": None,  # Placeholder for future data
-            "white_blood_cell_count": wbc_count,
-            "prediction_profit_model": None,  # Placeholder for future data
-        }
-    )
-
-# Write JSON data to file
-with open("assignment2.json", "w") as f:
-    json.dump(json_data, f, indent=2)
 
 
-# Question 2: Patient survival prediction
-
-# Perform one-hot encoding on the 'language' column
-language_dummies = pd.get_dummies(patient_df["language"], prefix="language")
-patient_df = pd.concat([patient_df, language_dummies], axis=1)
-patient_df = patient_df.drop("language", axis=1)
-
-# Convert gender to numeric (0 for male, and 1 for female)
-patient_df["gender"] = patient_df["gender"].map({"male": 0, "female": 1})
-
-# Convert 'admission_date' to number of days since a reference date
-reference_date = datetime(2017, 1, 1)
-# Convert 'admission_date' to datetime
-patient_df["admission_date"] = pd.to_datetime(patient_df["admission_date"])
-
-# Now perform the subtraction
-patient_df["admission_date"] = (patient_df["admission_date"] - reference_date).dt.days
-
-# Replace non-finite values in 'do_not_resuscitate' with -1 and convert to integer
-patient_df["do_not_resuscitate"] = (
-    patient_df["do_not_resuscitate"].fillna(-1).astype(int)
-)
+def connect_to_database():
+    """Establish a connection to the MySQL database."""
+    return sqlalchemy.create_engine(CONNECTION_STRING)
 
 
-exam_df["value"] = pd.to_numeric(exam_df["value"], errors="coerce")
+def fetch_data(cnx):
+    """Fetch data from the database."""
+    exam_query = "SELECT patient_id, measurement, value FROM PatientExamination"
+    patient_query = "SELECT * FROM Patient"
+    study_query = "SELECT * FROM Study"
 
-# Extract Features from PatientExamination
-measurements = [
-    "Arterial Blood PH",
-    "Bilirubin Level",
-    "Blood Urea Nitrogen",
-    "Glucose",
-    "Heart Rate",
-    "Mean Arterial Blood Pressure",
-    "Respiration Rate",
-    "Serum Albumin",
-    "Serum Creatinine Level",
-    "White Blood Cell Count",
-]
-extracted_features = pd.DataFrame(index=exam_df["patient_id"].unique())
-for measurement in measurements:
-    temp_df = exam_df[exam_df["measurement"] == measurement].pivot(
+    exam_df = pd.read_sql(exam_query, cnx)
+    patient_df = pd.read_sql(patient_query, cnx)
+    study_df = pd.read_sql(study_query, cnx)
+
+    return exam_df, patient_df, study_df
+
+
+def process_wbc_data(exam_df):
+    """Process White Blood Cell (WBC) data."""
+    wbc_df = exam_df[exam_df["measurement"] == "White Blood Cell Count"].pivot(
         index="patient_id", columns="measurement", values="value"
     )
-    extracted_features = extracted_features.join(temp_df, how="outer")
-extracted_features.columns = [
-    col.lower().replace(" ", "_") for col in extracted_features.columns
-]
-extracted_features.reset_index(inplace=True)
-extracted_features.rename(columns={"index": "patient_id"}, inplace=True)
+    if wbc_df.columns.nlevels > 1:
+        wbc_df.columns = wbc_df.columns.droplevel()
+    return wbc_df
 
-# Merge Extracted Features with Patient and Study Data
-df = pd.merge(
-    patient_df, extracted_features, left_on="id", right_on="patient_id", how="left"
-)
-df = pd.merge(df, study_df, left_on="id", right_on="patient_id", how="left")
 
-# Data Preparation
-df["gender"] = df["gender"].map({"male": 0, "female": 1})  # Encode gender
+def plot_wbc_distribution(wbc_df):
+    """Plot the distribution of White Blood Cell counts."""
+    plt.figure(figsize=(8, 5))
+    plt.hist(
+        wbc_df["White Blood Cell Count"].astype(float), bins=100, edgecolor="black"
+    )
+    plt.xlabel("White Blood Cell Count")
+    plt.ylabel("Frequency")
+    plt.title("Distribution of White Blood Cell Counts")
+    plt.xlim(0, 125)
+    # plt.show()
 
-# Feature Selection
-features = [
-    "age",
-    "gender",
-    "disease_category",
-    "disease_class",
-    "days_before_discharge",
-] + extracted_features.columns.tolist()[
-    1:
-]  # Exclude 'patient_id'
-X = df[features]
-y = df["died_in_hospital"]
 
-# Identify categorical columns
-cat_cols = X.select_dtypes(include=["object"]).columns
+def prepare_data_for_model(patient_df, exam_df, study_df):
+    """Prepare and merge data for the model."""
+    # Perform one-hot encoding on 'language' column
+    language_dummies = pd.get_dummies(patient_df["language"], prefix="language")
+    patient_df = pd.concat([patient_df, language_dummies], axis=1).drop(
+        "language", axis=1
+    )
 
-# Perform one-hot encoding on categorical columns
-for col in cat_cols:
-    dummies = pd.get_dummies(X[col], prefix=col)
-    X = pd.concat([X, dummies], axis=1)
-    X = X.drop(col, axis=1)
+    # Convert 'gender' to numeric
+    patient_df["gender"] = patient_df["gender"].map({"male": 0, "female": 1})
 
-# Split data into train and test sets
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
+    # Convert 'admission_date' to days since a reference date
+    reference_date = datetime(2017, 1, 1)
+    patient_df["admission_date"] = pd.to_datetime(patient_df["admission_date"])
+    patient_df["admission_date"] = (
+        patient_df["admission_date"] - reference_date
+    ).dt.days
 
-best_params = {
-    "max_depth": None,
-    "max_features": "sqrt",
-    "min_samples_leaf": 1,
-    "min_samples_split": 5,
-    "n_estimators": 100,
-    "random_state": 42,
-}
+    # Handle 'do_not_resuscitate' column
+    patient_df["do_not_resuscitate"] = (
+        patient_df["do_not_resuscitate"].fillna(-1).astype(int)
+    )
 
-# Initialize the model with the best parameters
-rf_model = RandomForestClassifier(**best_params)
+    # Extract features from PatientExamination
+    measurements = [
+        "Arterial Blood PH",
+        "Bilirubin Level",
+        "Blood Urea Nitrogen",
+        "Glucose",
+        "Heart Rate",
+        "Mean Arterial Blood Pressure",
+        "Respiration Rate",
+        "Serum Albumin",
+        "Serum Creatinine Level",
+        "White Blood Cell Count",
+    ]
+    extracted_features = pd.DataFrame(index=exam_df["patient_id"].unique())
+    for measurement in measurements:
+        temp_df = exam_df[exam_df["measurement"] == measurement].pivot(
+            index="patient_id", columns="measurement", values="value"
+        )
+        extracted_features = extracted_features.join(temp_df, how="outer")
+    extracted_features.columns = [
+        col.lower().replace(" ", "_") for col in extracted_features.columns
+    ]
+    extracted_features.reset_index(inplace=True)
+    extracted_features.rename(columns={"index": "patient_id"}, inplace=True)
 
-# Fit the model to the training data
-rf_model.fit(X_train, y_train)
+    # Merge all data
+    df = pd.merge(
+        patient_df, extracted_features, left_on="id", right_on="patient_id", how="left"
+    )
+    df = pd.merge(df, study_df, left_on="id", right_on="patient_id", how="left")
 
-# Make predictions on test set
-y_pred = rf_model.predict(X_test)
+    return df
 
-# Print confusion matrix and classification report
-print("Confusion Matrix:")
-print(confusion_matrix(y_test, y_pred))
-print("\nClassification Report:")
-print(classification_report(y_test, y_pred))
 
-# Most important features
-importances = rf_model.feature_importances_
-indices = np.argsort(importances)[::-1]
-features = X.columns
+def train_and_evaluate_model(df):
+    """Train the model and evaluate its performance."""
+    features = [
+        col for col in df.columns if col not in ["id", "patient_id", "died_in_hospital"]
+    ]
+    X = df[features]
+    y = df["died_in_hospital"]
 
-# Print feature ranking
-""" print("\nFeature ranking:")
-for f in range(X.shape[1]):
-    print(f"{f + 1}. {features[indices[f]]} ({importances[indices[f]]})")
- """
+    # One-hot encode categorical features
+    X = pd.get_dummies(X)
+
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42
+    )
+
+    model = RandomForestClassifier(
+        max_depth=None,
+        max_features="sqrt",
+        min_samples_leaf=1,
+        min_samples_split=5,
+        n_estimators=100,
+        random_state=42,
+    )
+    model.fit(X_train, y_train)
+
+    y_pred = model.predict(X_test)
+    print("Confusion Matrix:")
+    print(confusion_matrix(y_test, y_pred))
+    print("\nClassification Report:")
+    print(classification_report(y_test, y_pred))
+
+    return model
+
+
+def update_json_with_predictions(json_data, model, df):
+    """Update the JSON data with the model's predictions."""
+    # Prepare data for prediction
+    features = [col for col in df.columns if col not in ['id', 'patient_id', 'died_in_hospital']]
+    X = df[features]
+    
+    # One-hot encode categorical features
+    X = pd.get_dummies(X)
+    
+    # Add missing (zero-valued) columns
+    missing_cols = set(model.feature_names_in_) - set(X.columns)
+    for c in missing_cols:
+        X[c] = 0
+    
+    # Ensure the order of column in the test set is in the same order than in train set
+    X = X[model.feature_names_in_]
+    
+    predictions = model.predict(X)
+    
+    # Update JSON data with predictions
+    for i, patient in enumerate(json_data):
+        patient["Prediction"] = int(predictions[i])
+
+
+def main():
+    cnx = connect_to_database()
+    exam_df, patient_df, study_df = fetch_data(cnx)
+
+    wbc_df = process_wbc_data(exam_df)
+    plot_wbc_distribution(wbc_df)
+
+    df = prepare_data_for_model(patient_df, exam_df, study_df)
+    model = train_and_evaluate_model(df)
+
+    with open("assignment2.json", "r") as f:
+        json_data = json.load(f)
+
+    update_json_with_predictions(json_data, model, df)
+
+
+if __name__ == "__main__":
+    main()
