@@ -173,10 +173,14 @@ def update_json_with_predictions(json_data, model, df):
     X = X[model.feature_names_in_]
     
     predictions = model.predict(X)
+    print(f'Predictions: {predictions}')  # Print predictions
     
     # Update JSON data with predictions
     for i, patient in enumerate(json_data):
-        patient["Prediction"] = int(predictions[i])
+        patient["prediction_accuracy_model"] = int(predictions[i])
+        print(f'Patient after update: {patient}')  # Print patient data after update
+
+    print(f'JSON data after update: {json_data}')  # Print JSON data after update
 
 
 def main():
