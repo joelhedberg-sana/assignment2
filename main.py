@@ -51,7 +51,7 @@ def plot_wbc_distribution(wbc_df):
     plt.ylabel("Frequency")
     plt.title("Distribution of White Blood Cell Counts")
     plt.grid(axis='y', alpha=0.75)
-    plt.show()
+    #plt.show()
     # This histogram allows doctors to visually assess the distribution of WBC counts among patients,
     # identifying what is considered high, low, or normal within this specific population.
 
@@ -161,7 +161,7 @@ def update_json_with_predictions(json_data, predictions, key_name):
 def maximize_profit(model, X_test, cost_ratio=0.3):
     """Maximize KindCorp's profit by offloading claims to EvilCorp."""
     probabilities = model.predict_proba(X_test)[:, 1]
-    expected_profits = 500000 * probabilities - 150000
+    expected_profits = 500000 * probabilities - 150000 * cost_ratio
     sorted_indices = np.argsort(expected_profits)[::-1]
     cumulative_profits = np.cumsum(expected_profits[sorted_indices])
     optimal_index = np.argmax(cumulative_profits)
@@ -181,7 +181,7 @@ def plot_cumulative_profit(model, X_test):
     plt.ylabel("Cumulative Profit (€)")
     plt.title("Cumulative Profit Curve")
     plt.grid(alpha=0.75)
-    plt.show()
+    #plt.show()
 
 def calculate_costs(model, X_test, y_test):
     """Calculate the costs for different strategies."""
@@ -207,7 +207,7 @@ def plot_sensitivity_analysis(model, X_test, y_test):
     plt.ylabel("Profit (€)")
     plt.title("Sensitivity Analysis of Profitability")
     plt.grid(alpha=0.75)
-    plt.show()
+    #plt.show()
 
 def main():
     cnx = connect_to_database()
