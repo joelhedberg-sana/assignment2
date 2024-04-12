@@ -63,7 +63,7 @@
         "patient_id": "002b8849-9e91-4042-835a-f39aca30b550",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "004355f2-bdc3-4ae7-94e2-f18eecdeabd3",
@@ -99,13 +99,13 @@
         "patient_id": "00928502-0a33-4851-89bc-973b7d894da7",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "00ad353c-9e71-4024-8402-33b7cdca3f2a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "00c1f522-29be-4dd2-9dbd-e08b7403687f",
@@ -117,7 +117,7 @@
         "patient_id": "00c228b1-87c1-4df1-9fbd-fec661989d87",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "00ccc3f4-5d59-4f7a-a6e2-65275c1fe0ed",
@@ -195,7 +195,7 @@
         "patient_id": "013e56b3-6b93-4762-b21f-f56563bf52d6",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "013f61fa-2be7-48eb-b19b-e2ebe0b9bb00",
@@ -207,13 +207,13 @@
         "patient_id": "01415807-3d0c-4c27-96e8-a42fa653f6aa",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "01430785-603e-4560-b91e-0cd3028321f7",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "014aefdc-efad-4e34-9efe-ac147f4bbe8e",
@@ -267,7 +267,7 @@
         "patient_id": "01865479-df4a-4e09-9f1e-7bb461c2aa9e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "018b797b-ffbd-487a-91ed-3b6a0fcba724",
@@ -315,13 +315,13 @@
         "patient_id": "01db789c-e961-47f8-8a63-36062a34229c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "01de733c-9682-4575-98bb-6894083c0333",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "01e0ae20-1630-45d7-b032-5ae01371f507",
@@ -345,7 +345,7 @@
         "patient_id": "01e884e2-1168-4d8c-a505-790785ea38a4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "01f52e9e-96c1-45a6-b71b-5406f08f46bd",
@@ -357,7 +357,7 @@
         "patient_id": "02001113-736d-4b27-ae9a-9705d62fe0a8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "02042643-ef3c-4802-acac-0c51169d49ea",
@@ -381,13 +381,13 @@
         "patient_id": "0207b558-ed92-42f1-99a2-3c08e5b9472e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 29,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "02199714-6364-4af6-81d0-90d3269b2f58",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0222f349-6fa8-45a9-8cf0-93ef2a7bbe32",
@@ -399,7 +399,7 @@
         "patient_id": "022bd411-9d43-48ef-82d9-7f749af7a20b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "022cef45-12ce-49c8-b6aa-cc8a567750f9",
@@ -459,19 +459,19 @@
         "patient_id": "02881081-2d2b-4eda-b3be-b2ea4e11a59f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0293280e-67da-4951-917a-49902148c2b1",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "029bc31a-ee42-4013-8ffe-cdfd32171f6b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "02a29e86-d037-416b-8483-e9a4b6d16513",
@@ -489,7 +489,7 @@
         "patient_id": "02ac7003-10a5-4d57-bca9-0628bf0979e6",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "02b2e0b2-3687-48b8-ad70-eff8d527cc30",
@@ -537,7 +537,7 @@
         "patient_id": "02f26a19-c920-43b1-817f-3df0b05e49d4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "02f6a283-a96e-47c7-b21d-c622538adca5",
@@ -549,7 +549,7 @@
         "patient_id": "02fa83ad-58a8-45ca-9b4d-833523a6f6b8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "02fbd492-c972-40b2-bbfe-4e8f7b036837",
@@ -561,13 +561,13 @@
         "patient_id": "03046ec2-a451-4835-9e31-37faa70ddd22",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "030758e6-6ab6-4038-88cc-58165702a503",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "031f8425-b66b-4f87-bf5d-419a9bbe99ae",
@@ -621,7 +621,7 @@
         "patient_id": "034084b4-5f13-494a-9879-fa7404cda234",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "03415274-c55c-4fd8-a7d8-6512b838bebd",
@@ -645,7 +645,7 @@
         "patient_id": "03821afd-32b9-4c67-9986-0fe146f00e78",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "03848783-e42c-44ac-8d77-f791572621ee",
@@ -663,7 +663,7 @@
         "patient_id": "03953991-fd0b-4cef-b858-edc291eb6898",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "039ca6e7-8a35-4fe8-8d47-684444907d80",
@@ -699,7 +699,7 @@
         "patient_id": "03b8b77f-ce27-4b9a-9aa3-d6543348b397",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "03cd537c-0a03-4913-9e1c-69794b360916",
@@ -717,7 +717,7 @@
         "patient_id": "03dd05ce-0c25-4144-9e1d-5494bc6ed948",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "03e002ab-1ee7-4f81-9457-6d33ed79ae54",
@@ -729,7 +729,7 @@
         "patient_id": "03e08ebe-fe92-4b53-85a9-88edd9372309",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "03e7b636-90f2-47f9-b112-965e536828c6",
@@ -777,13 +777,13 @@
         "patient_id": "0416a9bf-47f4-49b5-9ccb-5799b240939c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 21,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "042ccdd1-7dda-4fae-9a9d-03957bc321e3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 21,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0432d503-ebb3-4201-b4f2-81ba61ad7d53",
@@ -843,13 +843,13 @@
         "patient_id": "046bdc6c-7320-4af6-9753-dbc1bd5336fd",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "046e01e4-76e9-418a-8783-f38b3f1e5769",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 19,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "046f29e4-41d7-4ad0-90fe-273b71c30950",
@@ -873,7 +873,7 @@
         "patient_id": "0478918b-3c4f-4f09-9995-7b9d1aaa4b9c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "047aa9e0-05b5-4115-a2d7-4d48d712b319",
@@ -891,7 +891,7 @@
         "patient_id": "048b5349-566a-491e-a306-7ae29f2f9af3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "048f9a68-e944-4095-8c27-7f5392787f46",
@@ -915,25 +915,25 @@
         "patient_id": "049ec8ba-1dd3-4c8b-ae09-d8d18a4e92f0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "049fa663-f7d4-47ef-a25d-5d2795ee6011",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "04b5f688-2bd7-498f-a03b-6c152f615cbb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 22,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "04b64c3f-091c-492e-9571-53a951b91aa2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 29,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "04bb7157-8fb9-44d8-9777-7415e7f23469",
@@ -945,7 +945,7 @@
         "patient_id": "04bd17bc-ae3e-416d-be33-837eea545ebb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "04bf67ee-fd97-4338-8f03-edc0cf092066",
@@ -975,7 +975,7 @@
         "patient_id": "04d9210d-55ed-4c67-a5fa-2916c27cf881",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "04da5c4b-b8ca-445d-ac22-25791a4c20a0",
@@ -999,7 +999,7 @@
         "patient_id": "0501a178-7a6c-4c1c-9a1e-668ade5ddd51",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 26,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "05276d3b-b2f1-42d3-9a28-1070b0e92472",
@@ -1017,13 +1017,13 @@
         "patient_id": "052cdc78-4a08-4068-84bb-968668b1e967",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0532902c-5380-4bb2-b648-46c643584e76",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0533e3ef-4efa-472a-adca-e3281a7f968e",
@@ -1047,7 +1047,7 @@
         "patient_id": "057e4280-5804-4aed-8704-029d002426ff",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0585ac09-3dd3-4570-a398-a5baa6274550",
@@ -1107,7 +1107,7 @@
         "patient_id": "05cc7654-00e3-4c4d-ad0e-88e42c43b00c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "05cc80de-8f8e-47b4-8d2f-7048ef60bf3c",
@@ -1161,7 +1161,7 @@
         "patient_id": "060eec1c-e4da-418c-abff-bbc61d6936a4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 24,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "06106f3e-0915-4c7d-93ee-e67c2bd695cf",
@@ -1233,7 +1233,7 @@
         "patient_id": "0652a9db-4a37-47e5-aa3a-d82393dcf134",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0664297b-4916-4a70-b6db-18d9d3bc2cdf",
@@ -1245,7 +1245,7 @@
         "patient_id": "06680391-5ef0-411a-bc79-2666e3264aa8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "066f19b5-6404-477d-8a04-12feb64832da",
@@ -1263,13 +1263,13 @@
         "patient_id": "06718e8a-bd6a-497a-8aa2-2d41e43ed5c9",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "067f15f9-7575-40df-9acc-429d9747d7a2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0680b010-2f45-4e70-aa1d-9d3cd7f665d4",
@@ -1329,7 +1329,7 @@
         "patient_id": "06c701f3-704f-4cb4-8efb-6efc478b8638",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "06d79cff-5a2c-44a9-995b-a2a37de6e530",
@@ -1341,7 +1341,7 @@
         "patient_id": "06da8e6e-242c-4335-a5c7-2358da1557c5",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "06e34f8a-21eb-4ef2-95a3-b926b4ffbe8a",
@@ -1353,19 +1353,19 @@
         "patient_id": "06fe9894-f97a-4f4a-98f1-25156c4fa250",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 22,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0705ca6f-2ba6-4dca-a35c-8e63f0634314",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 2,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "070873dc-1514-4276-af66-47ffeaf243f6",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 0,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "070f547f-55cd-48d8-a961-1450543ba0ed",
@@ -1383,25 +1383,25 @@
         "patient_id": "0726c162-46e1-4356-a718-284e8bd92807",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "073066f5-5851-4d90-9c12-643d7871299f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 3,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "07402e12-8f70-4c03-9e1e-805f6658155a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "07436a79-1755-4b0d-80ad-bd73f18e337a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 26,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "074cf2bb-40eb-4c41-beb3-211ad7fe83ef",
@@ -1425,7 +1425,7 @@
         "patient_id": "075811fe-1403-4850-8387-8cd61917cd1e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "075cab16-920d-4ed8-8d75-1d31bb3c2323",
@@ -1455,13 +1455,13 @@
         "patient_id": "079e5a1f-8bf6-4c40-a828-c9d180012750",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "07abe2ca-c805-450b-b61b-c935540b0536",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "07ad5443-5c4b-4968-aa5b-29de86df9afb",
@@ -1473,7 +1473,7 @@
         "patient_id": "07c11c1e-6b0f-4e22-976b-7294b90c3914",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "07f09d3c-d479-40ad-86b8-635a1f73a998",
@@ -1485,7 +1485,7 @@
         "patient_id": "07f14371-e7b1-4830-bdfd-a87e5f02aec2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "07f4bf8d-1532-465d-b951-706e4371368f",
@@ -1521,7 +1521,7 @@
         "patient_id": "0802020a-c69c-431c-89d7-d96f32145575",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 27,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0802b47a-20d1-484e-adeb-671f66a2cecd",
@@ -1533,7 +1533,7 @@
         "patient_id": "0805546e-c26a-4a58-893b-47a573336e58",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0808b573-d93c-4b97-beca-762af6134f0f",
@@ -1575,7 +1575,7 @@
         "patient_id": "08394e71-a129-4190-a863-b527af20542d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0841376b-dfef-4caf-bbba-e2c180d36aee",
@@ -1587,7 +1587,7 @@
         "patient_id": "08494dd3-33fb-4f0c-8519-1bf37cd6051c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 46,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "08543993-e134-49ab-9238-faf3df6eef4e",
@@ -1605,7 +1605,7 @@
         "patient_id": "086b827e-ee80-4ec4-b6dc-de0ad114fc71",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "086e2d6a-66bb-4400-bcb2-32095a9e82e0",
@@ -1617,7 +1617,7 @@
         "patient_id": "0873e7da-820b-4c31-9d15-abfcca5d7f8c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0874ea74-2b3d-4338-babc-3cf252cef8d6",
@@ -1659,7 +1659,7 @@
         "patient_id": "08950335-bf42-429f-95ba-4b701d07fc7e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "08955ee7-e13f-4b6d-956f-f49e88b75a16",
@@ -1671,7 +1671,7 @@
         "patient_id": "089729f4-c3ba-41e3-a66d-dde125b0df88",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "08a4b2ad-c97d-474d-8578-0b821c494a37",
@@ -1683,7 +1683,7 @@
         "patient_id": "08a5dc0c-13c1-42b0-a171-733ab51a53cc",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "08a6866d-8750-42bd-9109-29d0c9bafa09",
@@ -1695,13 +1695,13 @@
         "patient_id": "08acce49-67e2-48ff-a05e-e534c343c3bd",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "08af70f7-062b-4787-ac86-913db21bc2e8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "08b03b54-f90d-43a5-b60c-85b79fc1af1a",
@@ -1719,7 +1719,7 @@
         "patient_id": "08bd913c-ae52-4af3-bd1c-eec93a2655fb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 2,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "08be1b86-bb93-4bf0-98c6-befc8c87d7d6",
@@ -1731,7 +1731,7 @@
         "patient_id": "08c65eba-579b-43cd-a7cb-24df0c2563e6",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 34,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "08cd0858-5d8b-47d3-8a26-a370ac4791b8",
@@ -1749,7 +1749,7 @@
         "patient_id": "08d24dba-bf48-4d09-a5e9-1c3c878e3afe",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "08d3f7e0-59bc-45c1-a880-c402c3013288",
@@ -1839,13 +1839,13 @@
         "patient_id": "09692fcf-ae44-429c-b6e6-da03b177a84f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "096eb8f8-875e-439b-9306-3917d4c3f24a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "097364c0-78ed-49ae-ad63-bb34101d3b47",
@@ -1875,7 +1875,7 @@
         "patient_id": "097b42f7-87d6-4f74-8bef-a4e1302ffcf2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "097c9d3c-55be-4732-b3a9-f0e496ad3824",
@@ -1887,7 +1887,7 @@
         "patient_id": "097f95e4-6260-414e-9caa-be6ecd637a10",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": null,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "098aa824-749c-4372-8f92-f2a5efe7075a",
@@ -1923,7 +1923,7 @@
         "patient_id": "09b3e76d-2a0e-4f7d-838e-f64c81f85bf4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "09c04988-a895-438f-8d29-3adb1b39a1a1",
@@ -1959,7 +1959,7 @@
         "patient_id": "0a0443bb-44a5-4775-8517-c7aa30d888f6",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0a09814d-718c-485e-bce1-933147f37b5a",
@@ -1977,7 +1977,7 @@
         "patient_id": "0a177ead-c83c-4474-8437-f011a6d8cd16",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 22,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0a1ddb50-f7c1-486a-aeb5-699af2538795",
@@ -1989,7 +1989,7 @@
         "patient_id": "0a224fc3-ee8f-4c6a-93c7-fb0310d81869",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0a2a9b00-1617-4481-8d0f-ac4990962a12",
@@ -2013,7 +2013,7 @@
         "patient_id": "0a43f2be-ab04-4720-93dd-c362602316be",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0a53f156-4a67-48f8-ac8a-959f093719a4",
@@ -2031,7 +2031,7 @@
         "patient_id": "0a5496c5-e8d1-49c6-b5c6-6299c39bb53f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0a5a6a0e-ead8-4c2e-86a4-d0fc27746969",
@@ -2067,7 +2067,7 @@
         "patient_id": "0a84f828-3c6f-4d88-9736-a28bae0292d1",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0a88ce5d-d16b-4ab1-b30d-5d49d21d4999",
@@ -2085,7 +2085,7 @@
         "patient_id": "0a8c6e26-bff6-40bc-b2c7-0eac6eff84c8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0a935640-44f4-4569-9359-056c137309c3",
@@ -2109,7 +2109,7 @@
         "patient_id": "0aa0273d-978c-45f2-94a3-903289db744e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0aa17c5e-43d7-44ea-8a1d-d91c6a5cbf87",
@@ -2121,7 +2121,7 @@
         "patient_id": "0ab2260e-59d4-4b2f-b6e6-06c705fdc9e3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0ad92b66-17c3-416c-95db-a0a9a8582b1c",
@@ -2151,7 +2151,7 @@
         "patient_id": "0b029ba5-6920-46ef-bbab-7009112e47b5",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0b03f16b-e837-4046-8f8b-747ba5ecec35",
@@ -2211,7 +2211,7 @@
         "patient_id": "0b41c91b-05ae-49c8-875b-3adc17fc12f9",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 30,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0b42d32f-239c-4ceb-9e09-310c1d8e4e44",
@@ -2259,7 +2259,7 @@
         "patient_id": "0bad6a8b-fe98-46b5-b50b-a6df7eda9850",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0badb0f0-258f-4f96-b0f1-0dfda7645a05",
@@ -2271,7 +2271,7 @@
         "patient_id": "0bb4f3ab-b19c-4bad-a22c-78ff0e0c551e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0bb52d29-82df-4649-994f-0070b752c4ae",
@@ -2295,7 +2295,7 @@
         "patient_id": "0bbbcf06-24da-4dcf-b1a2-d420869af498",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0bc1c313-badb-42fc-8bb1-13f94919bb70",
@@ -2325,7 +2325,7 @@
         "patient_id": "0bdf487a-8cc2-4eb1-9e60-5ce1e9a6a305",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0be7d188-d089-407f-a522-48193964323c",
@@ -2343,7 +2343,7 @@
         "patient_id": "0bfb8070-34ed-4422-b023-84734332b91a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0c027bb4-4101-4b65-ab92-5ced002fd503",
@@ -2373,7 +2373,7 @@
         "patient_id": "0c1bbc78-c9e6-448b-bb44-16ab52a9b004",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0c1c335a-e608-40df-8e64-c9c615ced44d",
@@ -2439,13 +2439,13 @@
         "patient_id": "0c614c78-b010-4a51-9ce9-e8b23199f143",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0c6ba43a-d1ca-4e27-8888-1ca37060a1aa",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0c715a11-e091-4bb7-9dce-b21dd1ccc46b",
@@ -2481,7 +2481,7 @@
         "patient_id": "0c997787-a2fd-497a-bb04-5d537eaa68cb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0cc06027-63ca-4f1e-9054-3fe8747baeac",
@@ -2493,7 +2493,7 @@
         "patient_id": "0cd7b74d-b97b-477e-85d1-ce635742515c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0ce1f57a-9d0f-409f-aa5c-93a640026692",
@@ -2565,7 +2565,7 @@
         "patient_id": "0d2a012b-38fc-4506-96fd-76d0eefd51f1",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0d357196-55a8-4ef1-8ade-6693aef94107",
@@ -2589,7 +2589,7 @@
         "patient_id": "0d4f86a1-2e4d-408b-9541-79912130b029",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0d513e6e-4bab-4c75-b4bc-f0deee360bad",
@@ -2631,7 +2631,7 @@
         "patient_id": "0d85c641-049c-4a2a-a69e-ae44bb2748fb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0d977b61-2cc1-4ad4-9768-771cb2f5de50",
@@ -2643,13 +2643,13 @@
         "patient_id": "0da6b70b-d778-47ec-b5b3-82e7faf41033",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0db25c2e-d1eb-451d-be3e-d3c43e6207e8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0dbeac3e-204b-44e5-84f1-60df1b040c18",
@@ -2667,13 +2667,13 @@
         "patient_id": "0dd7c4c9-ff88-41bd-b048-131e9055bf15",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0dde9e56-f3e9-402c-a389-9ed01a1083ba",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0de4a0b1-09b1-4654-8900-005d8735c223",
@@ -2685,7 +2685,7 @@
         "patient_id": "0dfb9136-7738-4850-9fdd-1e64535da990",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0dfd5546-4dd3-4ed0-b93d-566a47812788",
@@ -2697,7 +2697,7 @@
         "patient_id": "0e09cca6-fd40-40d9-b87e-fabef80f59f1",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0e09eded-3ccc-4753-8a2c-81ee812ca785",
@@ -2709,7 +2709,7 @@
         "patient_id": "0e0b0b4c-4d67-485c-8e4c-abefdd052424",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0e0ec21e-1232-4014-8ae0-226ccec9831c",
@@ -2763,7 +2763,7 @@
         "patient_id": "0e3e3ff0-4802-4dae-a820-369d1bff9ec0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0e48587c-0a8b-4df8-8267-9ae416b479f4",
@@ -2787,7 +2787,7 @@
         "patient_id": "0e623095-846b-45a5-889d-d686040d6962",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0e764c07-3e33-4654-a196-c054b0e40e58",
@@ -2805,7 +2805,7 @@
         "patient_id": "0e7b490a-bb5d-464a-b2c8-c10afcc88829",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 72,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0e7de490-fa10-4892-b164-7734262f92b2",
@@ -2817,13 +2817,13 @@
         "patient_id": "0e8f130e-e3df-4e93-9f1d-7fbc9925f70e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0e9e24a6-fa0d-4ce3-89bf-f8ea5b035601",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": null,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0ea8abff-cc61-4d09-a9b5-10178d015ae6",
@@ -2865,31 +2865,31 @@
         "patient_id": "0edfd77e-5c42-40c5-97e3-304b870a1faa",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0ee29683-0e12-4445-a5a5-06817c42b1cb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": null,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f04b8df-a423-429e-8a53-a1e1d5bf6eaf",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f054795-ddf7-4c98-a2f9-99d3c8c4b1dd",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f093a7d-63b4-4497-8ae6-bfd4dd053d32",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f222d2c-2538-4bbc-a889-95f329d31dca",
@@ -2925,7 +2925,7 @@
         "patient_id": "0f2e3cc8-062b-476d-85b1-fc241c86b5bc",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f30fe7f-49f7-48b0-85cb-f361fdafe14d",
@@ -2955,19 +2955,19 @@
         "patient_id": "0f50e972-c6c8-4569-af5a-4d5cef4ca80f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f577e27-bc0c-4ea2-ab17-a39953b35f42",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f6d9dda-ec4b-4eb5-88ff-2b6b8f5d9609",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f6f113e-33fe-4204-9388-660801c9ef8d",
@@ -2985,13 +2985,13 @@
         "patient_id": "0f72ff8c-74ea-460d-a28b-d7f6a713d181",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f79634c-a870-46e7-9595-5083444c8ce4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f7b0c7b-51d6-43ee-ba52-4256833508c3",
@@ -3003,7 +3003,7 @@
         "patient_id": "0f7f5ff2-638b-401e-935f-c6f9ec4620d7",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f80e68f-09a3-406f-afa8-14e118db7e14",
@@ -3021,7 +3021,7 @@
         "patient_id": "0f877412-6271-4ea4-b2a1-41fcc896a824",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f8d8233-f1b1-4527-9853-7751d970617c",
@@ -3039,7 +3039,7 @@
         "patient_id": "0f93b244-eda9-4cab-9add-a8c600c83417",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "0f9930c0-0171-47a1-8a83-91c79678c7b5",
@@ -3117,7 +3117,7 @@
         "patient_id": "1005bfb5-f0af-4cc6-868c-327e23f83baa",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "10082a1d-ea8f-46a6-9be2-3528ac53912b",
@@ -3153,7 +3153,7 @@
         "patient_id": "103123fd-a878-48f7-bb34-dcc173dbf4ed",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1038b976-3583-48ff-953a-41432a841170",
@@ -3165,7 +3165,7 @@
         "patient_id": "103d9da1-0d6a-4aa8-b559-48905eeb466f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1045248e-4c80-432b-9162-f6bc1bffb6b6",
@@ -3231,19 +3231,19 @@
         "patient_id": "108148bd-7d19-4569-95df-6919df87d513",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "10880f2d-e8bc-42e2-a9eb-663e2b28662e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "108cdf7f-1eef-4af8-a58f-f127e7ab24d4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "10938bd2-f232-453f-93fd-27c4cc0f6f96",
@@ -3261,13 +3261,13 @@
         "patient_id": "1099481d-3aac-4b68-b634-e38bd58166e4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "109b648c-f93d-4cfd-ac24-b819d6eaaabd",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "109f1652-3969-4229-9bae-501542592c6f",
@@ -3297,7 +3297,7 @@
         "patient_id": "10a8ff81-0b74-4368-bb4c-622390a394fd",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 33,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "10aa00c1-9fb5-472e-be16-0da219cb98f7",
@@ -3363,7 +3363,7 @@
         "patient_id": "111d49f7-a1fb-4daa-8995-e94202a55a65",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1127bf59-7c43-47cd-8b92-7c23ef9fb7ff",
@@ -3393,7 +3393,7 @@
         "patient_id": "114895e9-0263-4d18-977e-715705e77b3f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "114f8cd2-b7ed-4772-ab3f-de3ee6355d39",
@@ -3417,7 +3417,7 @@
         "patient_id": "116ea9b0-ae16-4b36-93ed-567709ab3571",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "117fd8a9-2ceb-4917-8c58-68eda7c2f2c3",
@@ -3453,7 +3453,7 @@
         "patient_id": "11a95a04-8ec2-44c2-8a67-e05c05549cbf",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "11b5d574-7666-4815-aa01-941af3c86cdd",
@@ -3477,13 +3477,13 @@
         "patient_id": "11ccd7e8-440e-4317-96ba-e1cfa09a9e19",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "11d51b45-1ad7-449f-bde8-ae6e6777614a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 44,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "11dcdff1-808a-4f45-87e1-5dd51811bb78",
@@ -3495,7 +3495,7 @@
         "patient_id": "11fb1f56-ac33-482a-babc-2c821bbd3a05",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "12120a40-7e10-4f5b-b72e-bfaed4d7d2a0",
@@ -3561,13 +3561,13 @@
         "patient_id": "125ed520-cc53-4468-9f5e-0942ec34628b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "126967d5-980f-4973-8b9d-feab60b1f2ba",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 1,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "12702462-a869-4fe0-abd3-bfd50bd6dc56",
@@ -3639,7 +3639,7 @@
         "patient_id": "12933251-cdad-44da-ad7d-7cf45a7b252c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "129eacfa-3075-485e-8e7b-ee7a3d743e86",
@@ -3681,7 +3681,7 @@
         "patient_id": "12cb6e18-a57a-4ecb-b4c6-8b3231af1682",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "12ced87d-e0f8-4a83-8c12-9913027897fc",
@@ -3699,7 +3699,7 @@
         "patient_id": "12f0f8e1-22c6-41a8-81be-ca38900c054e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "12f3e91c-be5f-4bcc-a6d9-50d56e656b3d",
@@ -3837,7 +3837,7 @@
         "patient_id": "1373bcf0-a714-4080-a013-2a88d0ae613f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "137965ab-b6f8-433b-8e05-6b6b879b980f",
@@ -3849,13 +3849,13 @@
         "patient_id": "1379a52c-5e7b-483c-958b-6f0e4edf7eba",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1379deac-329b-445b-ae2e-de5a40d2ce99",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "137b5d1a-d5fb-4161-ab36-2eacd7f3c61c",
@@ -3873,7 +3873,7 @@
         "patient_id": "139be281-8bd4-48ab-b703-9eaf165a9e77",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "139d7747-b7d1-4245-b553-cea02aeff948",
@@ -3885,13 +3885,13 @@
         "patient_id": "13a9ca45-90d6-4b57-b3f4-146394d189ba",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "13ab458e-1611-4ce6-85f0-b352f5db631c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "13aec4f6-1d4b-4eb2-877a-370a59fb54ae",
@@ -3903,7 +3903,7 @@
         "patient_id": "13b42bd6-8250-420f-b13c-d5252578c7e5",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 23,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "13b672b0-2320-4436-9df6-698beceb6829",
@@ -3921,13 +3921,13 @@
         "patient_id": "13c7b7a7-9d4b-45a4-9058-6b765a5d7d37",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "13c825d8-378b-42bf-88e1-5e65183053ea",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "13cee96e-e163-4265-a5ea-7d8337f0c15b",
@@ -3939,13 +3939,13 @@
         "patient_id": "13d57272-6cb3-49e1-94b2-622da3c3103d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 58,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "13de68d3-d133-4aa4-93df-eb3cfda88c0c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "13edf16d-59dc-4d5b-8c0f-9efaa506cdb1",
@@ -3981,7 +3981,7 @@
         "patient_id": "1443d23c-bae7-4dbe-a4cc-031c727c93b6",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "144523be-56b8-4da9-9b87-39ff663c7743",
@@ -4011,7 +4011,7 @@
         "patient_id": "14576a37-49da-4955-97aa-33d63467f5f8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 19,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1457e2d6-10a1-4a5a-bec6-b8b88b469555",
@@ -4029,7 +4029,7 @@
         "patient_id": "145a3f14-5ad1-4db3-b6a9-0e7dea45b337",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "14628e75-8ecb-4f75-be67-51540e36e3d1",
@@ -4059,7 +4059,7 @@
         "patient_id": "14865b19-beb2-4c0c-8689-83af2fe1b764",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 0,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1487a96e-5280-453b-bf76-29d842c3b8c7",
@@ -4131,7 +4131,7 @@
         "patient_id": "14ee16c0-08ad-4b64-8ce1-67296272a93a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "14f33880-399c-454e-990e-56e55e026866",
@@ -4149,7 +4149,7 @@
         "patient_id": "15014de2-d525-4c8e-bc53-3313b8abdcc0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 3,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "15085276-5c13-4993-bd7f-5353aab60423",
@@ -4173,7 +4173,7 @@
         "patient_id": "15252634-62d0-4d66-a87e-173134aa5d50",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "15257e21-80af-47bf-9b3b-f9af8426b382",
@@ -4227,7 +4227,7 @@
         "patient_id": "15697154-3747-474b-95b0-609f4080113c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1571429b-3493-4c3a-980d-f7d35b681ed6",
@@ -4245,7 +4245,7 @@
         "patient_id": "1580350e-f2ca-4a54-b1a7-4f92219de9b2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "15892602-d539-4ff3-b1b7-8a67fb717da0",
@@ -4335,7 +4335,7 @@
         "patient_id": "16096f0c-9049-4e77-be45-ac310be7fbb5",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "161cf61f-5ef6-4e02-8c71-54db8822b879",
@@ -4419,13 +4419,13 @@
         "patient_id": "1675b64a-b25c-4bb0-b853-591eef3bf671",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 2,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1679f8a4-eb47-4a76-8ee3-f50ff9863b61",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 31,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "16803304-507c-4a16-8db1-20d356685d57",
@@ -4437,7 +4437,7 @@
         "patient_id": "1682d698-ad24-4b8c-9275-f761890fc1f4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "16912a54-763d-4c43-8dfd-dc5203b23023",
@@ -4449,7 +4449,7 @@
         "patient_id": "16960647-bd78-4cb4-81ea-86cee19466a2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "169d160f-697b-4f38-a16b-6c4e0f423671",
@@ -4485,7 +4485,7 @@
         "patient_id": "16c49833-b001-4397-aa60-f42f6bf917c1",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "16d8fb03-f7d2-40a0-8ef1-456b9aa0671d",
@@ -4497,7 +4497,7 @@
         "patient_id": "16d99668-a999-4cc6-bd61-44412403954c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "16e13a0c-707e-4de9-baeb-b9c00afa3fa2",
@@ -4515,7 +4515,7 @@
         "patient_id": "16ed521a-6545-4276-b310-0a2da057df73",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "17000b1f-6504-4388-ba44-a6662d4e8557",
@@ -4545,7 +4545,7 @@
         "patient_id": "1712079b-defd-4d97-9e58-7eb93c0e73d8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "171a84b7-c316-426e-a5e4-6271ef7bbd09",
@@ -4563,7 +4563,7 @@
         "patient_id": "1724bb1e-3129-46d8-b9af-dd52a227f70d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "17321104-4056-466e-8153-ec2a0dd1eeb8",
@@ -4599,7 +4599,7 @@
         "patient_id": "174a4b1b-e336-4bd3-a213-b8568e6e38e9",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "174d9a2f-a6e0-427e-a2f2-c81d59af0fb8",
@@ -4629,7 +4629,7 @@
         "patient_id": "1772e94d-d61c-4af4-a46a-0d2841288d0f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "17786ac6-dcb3-4f53-807e-40ae1eb6b211",
@@ -4659,13 +4659,13 @@
         "patient_id": "17a3bee4-500d-4600-8f60-0dd8d2e02b41",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "17a97803-8ec9-4ff0-b2a1-859e4edb15c6",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "17b06dde-d001-4f62-82d7-4e65650d798e",
@@ -4695,7 +4695,7 @@
         "patient_id": "17be4379-2edb-488a-8864-3e16551a7c6d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "17c4d022-bc54-4242-9f3b-145f18cf2ab9",
@@ -4719,7 +4719,7 @@
         "patient_id": "17dabf25-1158-4bb1-8e30-4046c93afaca",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "17deb3aa-54d5-4b1c-a4db-8f214284765f",
@@ -4773,7 +4773,7 @@
         "patient_id": "1833d525-2cda-4e70-82c9-196067197f14",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "183a67aa-1111-46f5-8baa-f5e6023c27ec",
@@ -4803,13 +4803,13 @@
         "patient_id": "18552cb0-071f-4f94-8751-f58f12ba627f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "185a72a0-35ff-4662-b468-de3961f26de0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "18621485-2177-4a61-bf00-633f115d5015",
@@ -4821,19 +4821,19 @@
         "patient_id": "1862fc05-e40a-4ab7-9952-46d32c5b79ef",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 22,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "186fc5d1-aa22-4340-a2d2-b48ba4219ad3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "18706c0d-18ee-4fb2-b614-102a5800a832",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1871b758-3861-489d-b442-f31eaa70b8d8",
@@ -4845,7 +4845,7 @@
         "patient_id": "18888de2-c49e-41ac-b9b9-debe3ddbab1c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1889425c-4da2-42d1-9208-1e8c788bbeec",
@@ -4857,7 +4857,7 @@
         "patient_id": "188a4d0f-4da2-40b5-9c39-85010610f2ef",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "188a82ef-3b68-4a40-a6df-cb0e5c7fca5c",
@@ -4875,19 +4875,19 @@
         "patient_id": "189a76f9-6ddc-4c5f-b77b-edcaf63a9c91",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "189b8f27-acc0-4704-af1e-d58d8664117b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "189ee368-c4c4-447a-9bec-1f986fd7389f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "18a5962a-9f59-4453-adc9-c9e34e7fbc5f",
@@ -4905,7 +4905,7 @@
         "patient_id": "18b068b0-c368-4bd8-85b3-4c29521e1238",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 29,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "18b3ab12-1ddd-4fac-aa25-9c98b1871350",
@@ -4917,7 +4917,7 @@
         "patient_id": "18b75d18-1eba-47cc-a8f7-845e3379e39a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 26,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "18dab627-3e80-424d-b671-38b2b3405ae5",
@@ -4929,7 +4929,7 @@
         "patient_id": "18dcd508-810c-4c65-ac29-4586f66760ab",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "18e3b590-ec66-44e9-88c3-471b66cff5c3",
@@ -4941,13 +4941,13 @@
         "patient_id": "18e8eafc-5ded-4331-8669-95742486ff9d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 23,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "18ea3f9a-b380-4a20-92ad-7565859e46d4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "18eae90a-73e7-48bf-8054-bb4085775781",
@@ -4965,7 +4965,7 @@
         "patient_id": "18fb438f-0123-4c1f-a9c6-6f72e43f22b5",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "190e8294-5dff-4d6b-b203-519e9cda7935",
@@ -4995,7 +4995,7 @@
         "patient_id": "19340d17-f075-4735-9db3-836dd8beeb82",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "19380094-369e-49cb-8e1c-4b186c470a7f",
@@ -5007,7 +5007,7 @@
         "patient_id": "19453b5c-9a97-4498-8c9f-1ef6e2d69c4f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "194c36d8-a33a-4aff-8113-4b3a4899e2ec",
@@ -5037,13 +5037,13 @@
         "patient_id": "19888887-5271-420a-b9d9-f968e85d6a17",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "198d5e00-8b5e-4fd3-b824-af6c44ac4d83",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "198ec182-97c0-4ab7-b9ab-1602eb21dc98",
@@ -5067,7 +5067,7 @@
         "patient_id": "1996c62a-ab55-4f6d-969e-e566cdfe4b01",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "19c523cb-87b0-4a3d-926a-0af868cd9aa4",
@@ -5079,7 +5079,7 @@
         "patient_id": "19cc8ae6-e53d-48b8-a758-039d62314248",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 0,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "19ccd4e2-cb6d-46cc-8cbb-266d938cecf8",
@@ -5133,13 +5133,13 @@
         "patient_id": "1a4518bf-c6c6-43e5-b656-9f61c343b662",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 2,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1a4cf07f-49eb-4862-845c-6f0aa2463e98",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1a586337-cc09-4a36-a675-fe30508716e3",
@@ -5163,7 +5163,7 @@
         "patient_id": "1a77fdcc-4c2a-4c80-8c64-119d9dfbcd0a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1a797869-05c2-4a80-9ab1-7288ba97e7b6",
@@ -5199,7 +5199,7 @@
         "patient_id": "1ab67c8b-5ac8-417b-9b39-4c0a1fe1e910",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1aca8a2c-d30c-46d8-bf7a-0d4f29fe04d3",
@@ -5229,13 +5229,13 @@
         "patient_id": "1af48345-7527-4298-8626-c3aee60263b9",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 19,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b0026f6-80ca-481f-8248-f97aba3f10d0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b1e81bd-4075-4a09-8a19-b15581ff454c",
@@ -5247,7 +5247,7 @@
         "patient_id": "1b1f422b-b180-404b-b4b1-4ee693479468",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b2033e9-8e52-4839-9387-6700c93b5dd2",
@@ -5259,7 +5259,7 @@
         "patient_id": "1b2384b5-831e-4a78-9e85-2560bcda6fc1",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b30ec51-2527-4d1a-bb95-bbf138d1d329",
@@ -5277,7 +5277,7 @@
         "patient_id": "1b3c01c7-f4d7-4c53-b044-28ce424c6cbf",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b4ec534-da36-43ef-8eea-b8ea925f74f3",
@@ -5301,19 +5301,19 @@
         "patient_id": "1b660606-73f8-4399-a89b-492f9a24748d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b67fe8b-8f30-4ebe-a27b-553a266fe54d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 0,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b6a6396-3fb2-4850-8804-75ee09b203ed",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 28,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b6b8c6a-8720-45c7-ac76-dff74d5d419d",
@@ -5337,7 +5337,7 @@
         "patient_id": "1b7da544-e4ca-4eae-8f2e-fa82c661ee9f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b7f7693-4395-49fc-a3ec-f4954c466d94",
@@ -5355,7 +5355,7 @@
         "patient_id": "1b86abaf-a752-4a69-a472-e0abf39dc7ee",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 33,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b8bd63a-65dc-4c60-a774-bfd10f5412f5",
@@ -5367,7 +5367,7 @@
         "patient_id": "1b900aa1-25bf-4bd6-b8a3-f5e6e2a3b165",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1b95aca4-4e67-430e-8e82-302c3fc9aef7",
@@ -5403,7 +5403,7 @@
         "patient_id": "1bbed0d0-4b88-4217-86df-3b46734bbb4d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1bc7e7e6-c6a1-406c-9dd3-4d5257e779d7",
@@ -5427,13 +5427,13 @@
         "patient_id": "1bd50290-1ec0-4414-9759-5ee913e4ab33",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1be6436e-750a-4ee9-b680-9d11738a1f66",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1bebe2d5-3cc0-4c88-9292-96c4deb445bf",
@@ -5463,7 +5463,7 @@
         "patient_id": "1c0ace51-4049-4199-a224-a9ae3c41a5f5",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1c0edd2e-1e84-4673-b165-b4b7b384beb1",
@@ -5505,13 +5505,13 @@
         "patient_id": "1c20513f-2205-400d-839e-50d514326e7a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 27,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1c223b57-55de-46aa-84b0-e19c2cc4bdc0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1c23f7f2-1e94-4458-877d-69e79b41263e",
@@ -5523,7 +5523,7 @@
         "patient_id": "1c26f016-5bdd-4d04-b954-d37fa841d951",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1c2fb50b-969c-49d9-b6bb-f59161bb3f43",
@@ -5661,13 +5661,13 @@
         "patient_id": "1c85be03-3aca-41d9-8f94-8f4f7f9b904c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1c876ff4-6a4c-4a76-b70f-c09d8e4884f8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1c8e160c-9d4f-4640-8788-de021ef3931b",
@@ -5703,7 +5703,7 @@
         "patient_id": "1cb1381b-14b6-4602-a196-6c7688e041cb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1cb28e44-a37c-4e6b-b7df-ab299c6db6eb",
@@ -5715,7 +5715,7 @@
         "patient_id": "1cb56f42-77fc-414f-a941-daf8933484b7",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1cb5e7a1-e889-4d71-b0f2-d73abecca866",
@@ -5733,7 +5733,7 @@
         "patient_id": "1cc79b5f-d42c-4e05-a5f5-be9e560f1b7d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1cc7fcda-093c-4a95-9aad-cb37c180af51",
@@ -5763,7 +5763,7 @@
         "patient_id": "1cf5d334-036f-4cbb-aa44-b47bae55abac",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 21,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1cf72e65-dd54-4fe6-a065-d839d41fa839",
@@ -5817,13 +5817,13 @@
         "patient_id": "1d3c439f-c309-42c4-ad3a-84c9a648c254",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1d4ffcf2-3f4b-4105-9858-b216d0f913d3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1d5173f9-dbd0-4534-bef2-412881b75229",
@@ -5835,13 +5835,13 @@
         "patient_id": "1d56055b-19e8-495f-a9d0-f13b36061e9d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 32,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1d5cad73-edf9-439f-b67a-5d0ee98615f2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1d7c254f-3abc-4497-bd65-457530a4f6a8",
@@ -5865,19 +5865,19 @@
         "patient_id": "1d82f255-a7f7-4826-949d-810dc9c4cd33",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1d943857-9544-48ac-8861-6e592c24ec77",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 21,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1d99fa0f-440b-4ded-9650-f5d590a27ab7",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1d9b401a-33d1-49b9-bd34-35ce121435c2",
@@ -5895,7 +5895,7 @@
         "patient_id": "1da23368-6535-4f9c-a612-130992ebe4d8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1da398c4-56c0-4972-b16c-b204e0335e05",
@@ -5913,13 +5913,13 @@
         "patient_id": "1db00b27-2210-4dd6-973d-ad2ae79f09ff",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1dc42066-fa36-4641-8b9e-0b03a76a07f0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 19,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1dce2648-0487-49c5-9794-ff31f588c836",
@@ -5931,7 +5931,7 @@
         "patient_id": "1dd3a6b2-8dfb-40bd-9a23-707197c3e66c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1dd4d7ad-2ffe-4f57-aa60-b01fdb0b479a",
@@ -5943,7 +5943,7 @@
         "patient_id": "1dd692b3-8488-4096-bcae-73ebd1670920",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1df88f41-f3dd-494b-a49f-a1fc1903fa8b",
@@ -5955,7 +5955,7 @@
         "patient_id": "1e15e708-0c0e-409f-adb0-71b131f63b0d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1e1769a1-7732-401e-bf38-11a331c57693",
@@ -6027,7 +6027,7 @@
         "patient_id": "1e7a0f01-af7c-4238-bce3-f7fc9d3c14c3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1e7dc292-8b0f-4fcf-a951-b8f1f9bcafe1",
@@ -6039,7 +6039,7 @@
         "patient_id": "1e7f3968-3e15-41e5-92f7-fd42eafea724",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1e877839-4c54-4717-982a-2f352efa3b14",
@@ -6051,7 +6051,7 @@
         "patient_id": "1e8e4032-741c-49a4-a46d-64603ab0c197",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 27,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1e9c79d3-19bc-4233-b7ed-5e45e7f3f506",
@@ -6069,7 +6069,7 @@
         "patient_id": "1ebec262-e6a1-4db7-8cbe-1a8aac79c180",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1ecd96c1-7abf-444f-9df4-d77dcf3b5dc0",
@@ -6105,7 +6105,7 @@
         "patient_id": "1ee86734-1fbd-4f90-94ca-c55cf758a09a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1ee9d638-386a-40c2-b23d-e912121ad873",
@@ -6123,7 +6123,7 @@
         "patient_id": "1eebaca7-44d3-463a-91eb-5d87887262b9",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1eed0196-0f02-4086-b680-f28864896ca2",
@@ -6141,13 +6141,13 @@
         "patient_id": "1f0386d6-c967-4dc2-860c-5b52a244990b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1f17e871-4d68-437d-aabb-467001cff654",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1f194898-987d-4c47-8dae-2b5e7b8eaaa1",
@@ -6213,13 +6213,13 @@
         "patient_id": "1f5e681e-3276-4453-8316-8488715c7d95",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1f63e76e-fd03-4d40-a590-2ee8fb4f8408",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1f699dbf-3d5f-4230-9757-68bee0b4b3af",
@@ -6261,19 +6261,19 @@
         "patient_id": "1f9a3195-a4d0-4a38-8395-780a0abe0afe",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1f9f8ada-13c3-486d-b6c5-228a1179bd26",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1fadd549-d96d-489d-a6b4-e2030fb09e37",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 22,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1fb17ced-5563-4f2b-abf9-f14bcd69b014",
@@ -6315,13 +6315,13 @@
         "patient_id": "1fcf3311-350f-416d-bc21-cf338e13dd3f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1fd60f90-4870-49b2-9e3d-1e205a267df8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1fe1de84-8ecb-4d55-8c6e-fa1be1592849",
@@ -6351,7 +6351,7 @@
         "patient_id": "1ff0220d-a747-432a-9e2c-80b4b18deae2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "1ff2eab7-a830-4a4d-aceb-7053285b6dc7",
@@ -6387,7 +6387,7 @@
         "patient_id": "201c7df8-72a9-431b-b6ab-d543fbb00aa3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2027a594-848d-48e3-9a79-d32f747b6ed1",
@@ -6435,7 +6435,7 @@
         "patient_id": "2054a762-7239-4ab1-bb08-df1d4df02a54",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 21,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "205e3c1e-fa1c-41df-8424-0870f814684b",
@@ -6483,7 +6483,7 @@
         "patient_id": "2084f748-7a7c-4779-94f7-6619df854d83",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "208c78b0-65de-43e3-8cf6-2e4fe1fb9f2c",
@@ -6501,7 +6501,7 @@
         "patient_id": "209152d2-e142-494e-937a-780911316b02",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "20926248-6763-4ae6-8c7d-a43e766bfc64",
@@ -6513,7 +6513,7 @@
         "patient_id": "2093edde-b4ac-4e7e-9efc-b2362fa34382",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "20a03b85-9cc1-4a7c-b18e-3b4595d10c37",
@@ -6543,7 +6543,7 @@
         "patient_id": "20c63ab5-ff6b-4aba-af6f-ac9c4e862f4b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "20dbfe10-9a56-4a85-a422-4b6c4900babf",
@@ -6555,19 +6555,19 @@
         "patient_id": "20e5edb0-0655-4b69-ae54-d0ec424bf355",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "20fba207-bf2b-4377-90b0-00b634f81a2e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 22,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "212021e0-62c5-4bd2-b224-8bf383a1f489",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "21209a47-4dfd-456a-991a-97215258f867",
@@ -6585,7 +6585,7 @@
         "patient_id": "213098da-1910-407a-925d-73661ebf7b1c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "213cca89-1e72-4089-8ab7-25a5629cb7cd",
@@ -6597,7 +6597,7 @@
         "patient_id": "214e2b2b-2e9c-4eca-ac99-039e31286299",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 35,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "215a3719-89e7-4c71-8836-29a955cfc980",
@@ -6615,7 +6615,7 @@
         "patient_id": "216b0028-92b0-41c2-9458-1aacdeb4417b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "216ca6c0-9619-4d83-a00b-4cfbe4ae2c41",
@@ -6657,7 +6657,7 @@
         "patient_id": "21962455-e378-4522-b865-b2d3b70aebb2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "21a43e4f-8a8a-4749-8f45-55fd9ed15da0",
@@ -6669,7 +6669,7 @@
         "patient_id": "21adb9bc-d3da-45b1-9de6-7e39bb804dee",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "21b1145d-afb2-4a34-9c6c-cb374b2f3c8c",
@@ -6687,7 +6687,7 @@
         "patient_id": "21f5b128-e1a0-4f34-be1c-ef5aa0699018",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 72,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "21fdb5be-5c3f-4ce6-950b-311c41177cfe",
@@ -6705,19 +6705,19 @@
         "patient_id": "22062272-e2b6-468a-a3ed-d88b7d4d7c38",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 1,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2207d5a8-8678-4a73-80b3-fd54204da82d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2210b2b0-574a-442c-a8cb-2c124735b006",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "22142879-a5e9-487f-b2eb-34da3a6a299b",
@@ -6729,7 +6729,7 @@
         "patient_id": "221636db-34e4-4d85-ab21-1bc79d926d04",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "221bac46-e01f-4611-b5e6-0531c07e1cb5",
@@ -6753,13 +6753,13 @@
         "patient_id": "2239d416-ca47-4b78-a977-65622e7e2dca",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "223c9a55-a081-4d66-8464-96a61bcb0fdb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "22414ad1-8c42-46e2-8ddd-df681d7ea05c",
@@ -6777,7 +6777,7 @@
         "patient_id": "224b3920-1ad1-4108-946c-3efc369fe0bb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "224be36a-57e4-414d-97f3-aa5f271cf4c4",
@@ -6801,7 +6801,7 @@
         "patient_id": "227da1b1-525a-408b-bb09-856065457306",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2286497f-800a-4889-aa14-e0767a517cc1",
@@ -6813,7 +6813,7 @@
         "patient_id": "22881f0a-2eac-40ba-bb08-5f6aea8d0b2f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2292f42c-c7fe-483a-97e7-dcacfdee75a0",
@@ -6831,25 +6831,25 @@
         "patient_id": "22aa6a28-4da9-4dfd-af2d-8a116479ec5e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "22bfc140-bd78-48a7-90c3-95d568f90504",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "22c1b8f6-7b78-49e5-811a-136c1ba21927",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 22,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "22cd62c8-e0dd-4c23-9074-158cbf3224d4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 3,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "22cd7ba3-b4e1-4c49-b4e6-613d99362c0a",
@@ -6885,7 +6885,7 @@
         "patient_id": "22dca4be-c6db-4ad2-9726-04e4d6bc6640",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "22df8855-e927-471f-aeb4-9e684f98c0d5",
@@ -6897,7 +6897,7 @@
         "patient_id": "22e23d05-1efc-4849-ae16-9192d027074b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 24,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "22e289c7-8dad-4929-bbd8-1e22d1d94ec4",
@@ -6927,7 +6927,7 @@
         "patient_id": "230e56cd-6d2a-4e6d-a1ff-f26ca51429d6",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2313ddc9-e782-4c83-96dc-1a361186e08d",
@@ -6951,7 +6951,7 @@
         "patient_id": "23324fc0-9333-4b4b-935e-244af766b158",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2332b5fd-3527-4713-bc67-75dfbe2973d9",
@@ -6981,13 +6981,13 @@
         "patient_id": "235c1025-c358-4535-8b76-4470b37a3d99",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 3,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "235ef9ea-dceb-4b20-a8ba-3ba9b76e398d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "236369af-cc6b-4553-b678-b48779d467ea",
@@ -7017,7 +7017,7 @@
         "patient_id": "23776f59-cac1-4426-bd01-31f6a4468b0f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "23804aae-974c-4c14-b3b3-c87f2e36e520",
@@ -7077,13 +7077,13 @@
         "patient_id": "23d9fd22-a7f0-408c-bda9-112b4b4ecfcd",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "23e6d89e-e262-460e-8ce6-1ca918d47958",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "23efdf95-030b-4d1b-bf0c-7efd7e947865",
@@ -7107,7 +7107,7 @@
         "patient_id": "24011fcd-2a73-4e38-aaaf-8ebb27e3bdca",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "243100c9-2033-43c5-866b-3900ea189c3e",
@@ -7131,7 +7131,7 @@
         "patient_id": "2459b4f6-26c0-4f3f-a3bd-1882f011027c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2459ec79-ecb2-4785-bbf3-f4d36d63bb0d",
@@ -7143,7 +7143,7 @@
         "patient_id": "245d1001-682d-4605-ab3a-04ad1b77af92",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "245f21dc-ffc5-4f51-aaee-9de7f0dbc988",
@@ -7185,7 +7185,7 @@
         "patient_id": "2496306b-9972-480a-8e0b-8ad8218aeb98",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "249b08a0-b0d2-4c9d-94e0-f6231421ade1",
@@ -7233,7 +7233,7 @@
         "patient_id": "24bae60a-bb2a-4f32-9ddc-0b3a279a7d04",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 1,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "24bafd0c-69f2-4d57-bc45-d0e17f929700",
@@ -7263,7 +7263,7 @@
         "patient_id": "24d18181-831d-42c9-b1df-689d3912b817",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "24d542a1-7056-444f-bb63-28b76cee75c5",
@@ -7281,7 +7281,7 @@
         "patient_id": "24f6c7aa-36af-4783-9ddc-7a95484ba588",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "250b6853-bf79-410a-8bcb-8525a10ee812",
@@ -7293,7 +7293,7 @@
         "patient_id": "251815f2-a6e0-4ea6-96e0-a0211ffe3b44",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2520ec64-74a4-468f-9663-2e21944d9745",
@@ -7305,7 +7305,7 @@
         "patient_id": "2524c8bb-aceb-43be-ac93-d2a2963e8a89",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2529084b-72ac-4c19-bd9b-186ae53120a6",
@@ -7485,7 +7485,7 @@
         "patient_id": "25f037b1-5f74-40b3-9bdb-dc48b381c07f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "25f191d3-0095-4252-96f3-96f8607ad187",
@@ -7521,7 +7521,7 @@
         "patient_id": "260dd943-7c83-49d7-b215-860ee667bf33",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2618db97-cea0-4aef-8772-b08d541c5591",
@@ -7545,7 +7545,7 @@
         "patient_id": "26243bbd-989d-41d8-bb6c-310d418eba45",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2625491d-84e2-4b54-9c4d-d7480a4f534d",
@@ -7557,7 +7557,7 @@
         "patient_id": "262be080-e21f-46d5-b5b3-9fc215641ff4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "264cdcef-44e3-4a05-934d-cb38d3ecca91",
@@ -7575,7 +7575,7 @@
         "patient_id": "265485e6-252a-488a-b9ed-ec59e1570423",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "265f11a9-f812-4a05-a187-a1cdfefecf7e",
@@ -7629,7 +7629,7 @@
         "patient_id": "26afd2d8-c1ba-40d2-a6b9-264be9c17f06",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "26b91e6b-5b07-4158-8b39-abc878cbab8c",
@@ -7641,7 +7641,7 @@
         "patient_id": "26c1533c-f573-468c-8452-264850b64632",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "26c6a6ad-f9b5-44ec-9a03-c58c89b81fb7",
@@ -7659,7 +7659,7 @@
         "patient_id": "26db7b0e-35f5-49f7-8797-a91e0101cb88",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "26dd415a-a4a3-406b-8c9a-6d67d82d7573",
@@ -7725,7 +7725,7 @@
         "patient_id": "27346ed7-05d9-47e0-9542-49659d234e58",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": null,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2736f2cc-a7bb-4b37-b8ee-d208bcd7ba2b",
@@ -7761,7 +7761,7 @@
         "patient_id": "274e5fe1-bedc-4b1b-9aab-b6fb917bd162",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "27543cfe-04c7-48e5-a6e8-ab49a2e66aa1",
@@ -7779,7 +7779,7 @@
         "patient_id": "2768b107-0363-475c-8d91-8ae2e86cf2bd",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "277eb20a-8097-42bc-90ac-c0bfd3b44007",
@@ -7809,7 +7809,7 @@
         "patient_id": "27a4d347-5de8-4e24-a217-ca5c7cc681ae",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "27acf85c-47b9-429a-9d98-e14337cfe515",
@@ -7827,25 +7827,25 @@
         "patient_id": "27b771ba-ccad-46cd-a0d7-a70c9bf4841f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 19,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "27b9b553-77d2-48b1-b7e7-93c91ccc9068",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "27c8558f-d4bc-4de1-84d3-ee32ee5f1869",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "27cfc5a8-ed42-4cbc-be4d-722647f8608f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 23,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "27d678e2-c294-4809-ba79-ed1f6385d08b",
@@ -7857,7 +7857,7 @@
         "patient_id": "27daf057-780a-4067-90ae-498f8fed5b5c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "27ddb35c-fc29-4001-a41a-011323a58104",
@@ -7887,13 +7887,13 @@
         "patient_id": "27f372c5-496c-4119-b1f9-769278cdbe72",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "27f76e3a-0ad2-4c84-9bee-53a729dc0830",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "27f83c5e-d04c-4b1c-a597-d1c9b248aff7",
@@ -7911,7 +7911,7 @@
         "patient_id": "27ff2210-48d6-4ee9-bd6f-f4c340435d7e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "280dd0ec-535a-4af8-b31d-7009f15c54ba",
@@ -7935,7 +7935,7 @@
         "patient_id": "28258beb-55c0-4ad6-9357-4625ce20feb8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 1,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "282a9800-f339-49c7-9386-ca1b59d31903",
@@ -7947,7 +7947,7 @@
         "patient_id": "282e29e1-c8b2-4c77-8f18-f5b6251e0534",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 27,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "28336d41-de96-4cf1-a640-424421401869",
@@ -7965,7 +7965,7 @@
         "patient_id": "2847c3b3-8eb2-4d42-907e-155c1af82801",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 28,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "284db14a-dfb2-456d-810e-1dba86d5d3a8",
@@ -7989,7 +7989,7 @@
         "patient_id": "285959a4-9d00-4838-84aa-bb24ae904c57",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "286df816-b873-46e1-b704-c81f4739dc9a",
@@ -8025,7 +8025,7 @@
         "patient_id": "289691fb-b4f0-4046-86f1-89560e5553d3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2897247c-5e50-49ab-a3d3-5e6a6da8afac",
@@ -8037,7 +8037,7 @@
         "patient_id": "28c3f5f4-701f-4887-952b-ac7d322b8716",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "28c7bee3-a400-4815-b5b2-07c8d6677767",
@@ -8061,7 +8061,7 @@
         "patient_id": "28dead16-7217-4985-8298-0e53a5d89b72",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "28e3e9f5-134a-487c-8c9c-e126e9c7c1f7",
@@ -8073,7 +8073,7 @@
         "patient_id": "28e5083b-8651-4b4a-8039-b3591898261e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 28,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "28ec2a10-f180-4941-9af0-d7a22a679186",
@@ -8085,7 +8085,7 @@
         "patient_id": "28eec2bb-a681-4ccd-96ee-98825d5ffd43",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "28f3f876-9d65-4152-8aa9-86ac8b1bb82b",
@@ -8103,7 +8103,7 @@
         "patient_id": "290f9b1c-9a14-44b4-8f85-a1b5ec4bba6d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "291670d3-37af-4372-93bc-fa1e65c13f5a",
@@ -8121,13 +8121,13 @@
         "patient_id": "2924127e-0bc2-4c82-9fb1-e250a091953f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "292758c8-cd53-4ca8-8303-6ebd94e51f94",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "29289bf7-a8f8-4260-9390-a01601ce7332",
@@ -8151,13 +8151,13 @@
         "patient_id": "29360c76-e7ec-4f3b-97e3-f449169293ca",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 25,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2938d3d5-6d6d-420d-a63b-28fb94438e97",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "29392529-30f8-4768-bd8b-886cca420714",
@@ -8199,7 +8199,7 @@
         "patient_id": "2952b5a0-1253-470d-98fd-602ece7413f1",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "29550346-29b8-46d7-ba34-e41f9c2c4109",
@@ -8253,7 +8253,7 @@
         "patient_id": "297e17bb-8613-41e5-9830-21c7dce132a0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "298a235f-cee8-4e9a-a3aa-096cf3f26b44",
@@ -8307,7 +8307,7 @@
         "patient_id": "29bcd87c-1e6e-4104-93a2-6efc1cdbbd50",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "29d5c5fe-370a-4009-ac17-cb9eca22bfbf",
@@ -8349,7 +8349,7 @@
         "patient_id": "2a071389-e4fc-4aaf-9590-0495e01495b7",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 3,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a0f535c-400d-480b-b015-c9d60cd391c8",
@@ -8361,7 +8361,7 @@
         "patient_id": "2a106d91-385e-4ad9-be10-e9b23d0e5326",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 1,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a16d884-c30c-48c7-bf4e-f4368d887ae7",
@@ -8373,19 +8373,19 @@
         "patient_id": "2a1a438b-67ac-44e1-8087-249d04825d50",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a20cd97-ba28-46f2-9cf6-aa5d4d08c21a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a26f975-06b6-417f-827b-c5a46c6fddc0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a2da512-4b4a-4bbe-aa6b-3537f4b51273",
@@ -8457,25 +8457,25 @@
         "patient_id": "2a58a80a-b361-461d-8604-330cac6a38eb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 0,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a5cd0ef-b934-4dd1-aad3-0079370af932",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a5d64a9-19ac-4ee9-b0ea-538ca52483b3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a5f7fb8-2737-4ac7-95fe-f0fbe0b1ebaa",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a7675dc-194b-4176-a8f2-026f6bc4eb5d",
@@ -8487,7 +8487,7 @@
         "patient_id": "2a7cca9f-0018-48b2-8ece-4700d9e4f907",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2a8b102d-6f88-48ee-8386-ed4521854dc9",
@@ -8511,7 +8511,7 @@
         "patient_id": "2ab2ac5e-ca06-4d5e-b20b-8457f4e5029b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2ab63fa2-d319-4e32-ac2b-89039a5e1601",
@@ -8523,7 +8523,7 @@
         "patient_id": "2abf3f7e-cfc5-481a-87e0-08804c1db985",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2ac537af-c113-4dbd-b40b-b848fa9a94bf",
@@ -8619,7 +8619,7 @@
         "patient_id": "2b6ba8f3-0490-4e8e-acb2-a69226e2843b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2b6e8ec5-0b4c-48cb-abf2-88e6ab434a4c",
@@ -8643,7 +8643,7 @@
         "patient_id": "2b76b988-f347-4dce-8014-65e334750b55",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2b79b933-92f8-4b9a-a417-d076c74eb504",
@@ -8661,25 +8661,25 @@
         "patient_id": "2b91fbe7-e5ea-4ce9-84fe-651ff948b113",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2bbb1fc9-38cf-4348-921c-067611bbb5af",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2bcc4e12-6ce1-4aa4-bf40-8ecf0d36cf24",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2bd16827-1819-4792-9e03-00a82b8a321f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2bdb41c2-a9e1-4923-8457-67b4f95960be",
@@ -8691,7 +8691,7 @@
         "patient_id": "2bdcb1dc-756f-4f16-b362-276566594df0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 35,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2bdd0d69-e0c7-4194-8f3c-0a3810ada2a6",
@@ -8709,7 +8709,7 @@
         "patient_id": "2bf32747-88d4-459c-8715-f70949716153",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2bf670fc-0659-4c61-bb3a-5fe55c077e64",
@@ -8739,13 +8739,13 @@
         "patient_id": "2c071937-984d-461d-b1d3-d60ad77ec2a0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2c0980d6-da8e-4bf9-b846-d16223432219",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2c221e87-1daf-44b6-b751-ef36be59b8f5",
@@ -8793,13 +8793,13 @@
         "patient_id": "2c69ec7f-9fe3-445a-9d9d-3940c8507e7d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2c78d8ad-4992-4435-aace-a46319fbd79e",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2c7b64ec-d022-494b-b94c-47d19c8a5585",
@@ -8835,7 +8835,7 @@
         "patient_id": "2ca4e30e-dcaf-4622-8315-8a6461b06b31",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2cace018-a92f-4c6d-b24a-a11d44d1caf8",
@@ -8889,7 +8889,7 @@
         "patient_id": "2cdea45e-b047-4c7e-abfd-6301fca10030",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": null,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2d0fd42b-8a87-4923-8c37-dc73242e3151",
@@ -8919,7 +8919,7 @@
         "patient_id": "2d32b460-1349-436d-becb-32c487654fd5",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 22,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2d3518e4-76c3-4d17-b93c-1bb4d0a6f40d",
@@ -8931,13 +8931,13 @@
         "patient_id": "2d4bba47-2103-412e-b43b-1d6d91146d5a",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2d538f21-31c6-4c34-8aab-ac7668ee25e3",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2d552dab-01a2-4134-beb7-a05b17fe717b",
@@ -8949,7 +8949,7 @@
         "patient_id": "2d59af6f-bfc1-4a2c-ba7e-45d9e50d1a9c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2d5da3bb-d1b7-493f-8f93-87fe5a040ed5",
@@ -8961,7 +8961,7 @@
         "patient_id": "2d71b46c-38d5-4934-820c-5b3adfe74639",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2d7460c9-8999-45f8-bd25-e7dedcaad78b",
@@ -8991,7 +8991,7 @@
         "patient_id": "2db3860f-1b17-46fc-af03-0dedb50b7360",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2db426e1-bed1-4d60-b378-b354ff81952f",
@@ -9009,13 +9009,13 @@
         "patient_id": "2db5edae-2bb3-4ea6-93c5-5fe6d3d40af7",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2db840d6-243f-422e-a224-f52d251b3cfc",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2dbc63d9-dad6-4a1e-8c82-f77a1a1a7c2a",
@@ -9027,7 +9027,7 @@
         "patient_id": "2dbeadf5-3547-4597-983c-d0b2ab0509b5",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2dc288d1-ebbb-47e6-8093-8effda77bf22",
@@ -9051,25 +9051,25 @@
         "patient_id": "2dde418c-2ac8-48d2-9180-822520939822",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2de01b99-6472-44cf-8b85-5c07e0f8e5d0",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2de3abd3-a4bb-4d08-a0e2-4032b7dc0af5",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 17,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2df15ed8-4048-41f9-9a8d-336528cfc91b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2df442cd-3b1b-46ea-a48d-1ff2ee805a9a",
@@ -9081,7 +9081,7 @@
         "patient_id": "2df87166-1566-4879-9962-078ea2eb7b2d",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 15,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2e0c8308-384a-459c-ba0b-1818de9a9040",
@@ -9093,19 +9093,19 @@
         "patient_id": "2e1d6bb2-cae3-457a-b9a1-81b9c03d5f39",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 9,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2e1dad99-5408-429e-988f-7286b0e785a6",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2e24be13-d5f3-4921-acf6-ccc9abc22491",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2e25b372-9467-455f-8d3a-ba61fa2d0141",
@@ -9135,7 +9135,7 @@
         "patient_id": "2e3dfa65-265b-497d-8a90-021788552985",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 6,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2e476db5-49c0-4c06-9ec1-73cfa6ac25f6",
@@ -9153,7 +9153,7 @@
         "patient_id": "2e5b002e-ff56-4cc1-a7cb-1e374f5ac778",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 24,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2e7e4384-2acd-431f-9b89-c8462c873cc7",
@@ -9165,7 +9165,7 @@
         "patient_id": "2e8c1bc4-4468-4eb6-a05e-77cff684a3df",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 18,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2e9b7f4e-d4fc-424c-987e-0886a962bb6c",
@@ -9207,7 +9207,7 @@
         "patient_id": "2ecfff69-7f72-4dbd-a5ea-67b62826259f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 21,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2ed6aa24-0951-4118-9bd0-e5c04bbc918f",
@@ -9219,7 +9219,7 @@
         "patient_id": "2ee8eaae-969d-4566-a3c8-308eb2364d08",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 16,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2f046e6f-efe7-403b-a836-35e797c749b1",
@@ -9267,7 +9267,7 @@
         "patient_id": "2f53d65c-055f-426b-8f1a-00150cb8f34b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 37,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2f54fa7c-6985-42fa-8c90-d156f7bd78dd",
@@ -9279,7 +9279,7 @@
         "patient_id": "2f552b43-7a5b-4200-a1aa-58bb92e451dc",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 14,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2f62b468-d628-4b7b-8055-de160a8fae99",
@@ -9291,13 +9291,13 @@
         "patient_id": "2f65aa78-edd8-4cb3-95b7-525692dd033b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2f65bd6c-4182-4f05-9914-a5281f8b9be4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2f69cd64-a293-4909-89bc-0a5d00e2327a",
@@ -9327,7 +9327,7 @@
         "patient_id": "2f8e46af-2767-44b6-874b-5241cc2f110f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2f8fee98-1a39-4d61-b485-894d60114324",
@@ -9375,7 +9375,7 @@
         "patient_id": "2fb85fb3-89f6-4835-9382-932ed4718c91",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2fbffc1c-9a2b-49fc-af02-77217a903278",
@@ -9387,7 +9387,7 @@
         "patient_id": "2fce2792-26ee-46eb-a1a2-0e556a0633aa",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 20,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "2fdb78db-4048-4282-a32a-c52c905efd62",
@@ -9411,13 +9411,13 @@
         "patient_id": "2ff8912f-b2f3-4c7c-83b7-878987aaf923",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "3005274a-5165-4bfc-893f-1cca2a4d6eba",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "300642c4-0c42-40fd-912c-cb69e8cbf444",
@@ -9435,13 +9435,13 @@
         "patient_id": "301252f3-0b85-4ea0-8ec4-f93aa93d05e2",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 19,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "301ae155-79ce-4e54-a847-3badcb821e35",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 5,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "3023a032-9c47-4856-bedf-d24f6d2a7ce8",
@@ -9459,7 +9459,7 @@
         "patient_id": "302967c7-1c2c-4d08-abeb-bfd87eb3f059",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 12,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "302b6cf4-b15e-493f-918a-a867cae98cce",
@@ -9489,7 +9489,7 @@
         "patient_id": "3050f596-addb-489b-97b6-49cd15af32bf",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "30545c20-4ff4-4d93-9162-074843b475d0",
@@ -9513,7 +9513,7 @@
         "patient_id": "306ee6b8-5784-4680-8276-1d4a4eb708f4",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "306f86b6-298f-4029-94f6-d3132b7b08a1",
@@ -9555,13 +9555,13 @@
         "patient_id": "307b712c-3f29-4258-be7a-a20648ac5d5b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 11,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "30903b54-2497-4a5a-84ec-61b77589285f",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 10,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "30926346-b7a2-4a03-a8d8-875e5f59c349",
@@ -9591,13 +9591,13 @@
         "patient_id": "30a0f36f-55fb-45bf-882a-9e7c16699665",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 7,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "30a12d97-4caa-4fc8-a419-2e99bc62065b",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "30a32e9c-2423-478b-a6e9-92f953c1681f",
@@ -9651,7 +9651,7 @@
         "patient_id": "30dbf379-aa29-45b3-a699-1780d44a4214",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 13,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "30de5900-06de-4a1c-9b67-7f05428eef92",
@@ -9669,13 +9669,13 @@
         "patient_id": "30e1ba3c-19c5-42b3-8279-15f0c0e38d9c",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 4,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "30ed27b7-8f9c-4d59-be1f-f20915be87eb",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 0,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "30f54539-0dc0-428f-a7b4-a7b14e962ab1",
@@ -9693,7 +9693,7 @@
         "patient_id": "30f959d7-e271-4652-8ce4-d2fa78412399",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "310af2db-ee7a-4f9f-bc5c-c341ebefef1d",
@@ -9717,7 +9717,7 @@
         "patient_id": "3120bbfc-650c-4d21-acfa-18592ca9aeb8",
         "prediction_accuracy_model": 0,
         "white_blood_cell_count": 8,
-        "prediction_profit_model": 0
+        "prediction_profit_model": 1
     },
     {
         "patient_id": "3121f671-0299-4e05-8255-26e68908704d",

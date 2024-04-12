@@ -195,19 +195,25 @@ def calculate_costs(model, X_test, y_test):
 
 def plot_sensitivity_analysis(model, X_test, y_test):
     """Plot the sensitivity analysis of profitability."""
-    thresholds = np.linspace(0, 1, 100)
+    error_rates = np.linspace(0, 1, 100)
     profits = []
-    for threshold in thresholds:
-        classifications = (model.predict_proba(X_test)[:, 1] >= threshold).astype(int)
-        profit = -500000 * (y_test * (1 - classifications)).sum() - 150000 * classifications.sum()
+    for error_rate in error_rates:
+        # Simulate predictions with the given error rate
+        simulated_predictions = model.predict(X_test)
+        simulated_predictions[y_test == 0] = np.random.choice([0, 1], size=np.sum(y_test == 0), p=[1 - error_rate, error_rate])
+        simulated_predictions[y_test == 1] = np.random.choice([0, 1], size=np.sum(y_test == 1), p=[error_rate, 1 - error_rate])
+
+        # Calculate profit based on simulated predictions
+        profit = -500000 * (y_test * (1 - simulated_predictions)).sum() - 150000 * simulated_predictions.sum()
         profits.append(profit)
+
     plt.figure(figsize=(8, 5))
-    plt.plot(thresholds, profits, color='skyblue')
-    plt.xlabel("Probability Threshold")
+    plt.plot(error_rates, profits, color='skyblue')
+    plt.xlabel("Error Rate")
     plt.ylabel("Profit (€)")
     plt.title("Sensitivity Analysis of Profitability")
     plt.grid(alpha=0.75)
-    #plt.show()
+    plt.show()
 
 def main():
     cnx = connect_to_database()
@@ -238,6 +244,12 @@ def main():
         predictions = model.predict(X_test)
         print("Confusion Matrix:\n", confusion_matrix(y_test, predictions))
         print("\nClassification Report:\n", classification_report(y_test, predictions))
+        # Calculate Type I and Type II errors
+        type1_error = np.sum((y_test == 0) & (predictions == 1)) / np.sum(y_test == 0)  # False Positive Rate
+        type2_error = np.sum((y_test == 1) & (predictions == 0)) / np.sum(y_test == 1)  # False Negative Rate
+
+        print("Type I Error (False Positive Rate): ", type1_error)
+        print("Type II Error (False Negative Rate): ", type2_error)
 
         # Identify and print the five most important features for Question 2.4
         encoded_features = features
