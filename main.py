@@ -8,8 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
-from sklearn.preprocessing import OneHotEncoder
-import os  # For environment variables
+#from sklearn.preprocessing import OneHotEncoder
 
 
 # Constants and Configuration
@@ -185,7 +184,7 @@ def plot_cumulative_profit(model, X_test):
 
 def calculate_costs(model, X_test, y_test):
     """Calculate the costs for different strategies."""
-    probabilities = model.predict_proba(X_test)[:, 1]
+    #probabilities = model.predict_proba(X_test)[:, 1]
     cost_of_doing_nothing = -500000 * y_test.sum()
     cost_of_selling_all = -150000 * len(y_test)
     classifications, _ = maximize_profit(model, X_test)
