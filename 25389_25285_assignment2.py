@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import json
 import sqlalchemy
-from datetime import datetime
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.ensemble import RandomForestClassifier
@@ -35,10 +34,21 @@ def fetch_data(cnx, table_name):
     df = pd.read_sql(query, cnx)
     return df
 
-def identify_admitted_patients(patient_df):
+
+def identify_admitted_patients(cnx):
     """Identify patients currently admitted and in need of classification."""
-    admitted_df = patient_df[patient_df["days_before_discharge"] > 0]
-    return admitted_df["id"].tolist()
+    query = """
+        SELECT p.id AS patient_id
+        FROM Patient p
+        LEFT JOIN Study s ON p.id = s.patient_id
+        LEFT JOIN PatientExamination pe ON p.id = pe.patient_id
+        WHERE p.days_before_discharge > 0
+          AND pe.patient_id IS NOT NULL
+          AND p.admission_date IS NOT NULL
+    """
+    admitted_df = pd.read_sql(query, cnx)
+    return admitted_df
+
 
 def save_patient_ids_to_json(patient_ids, filename="classification_patients.json"):
     """Save the patient IDs to a JSON file."""
@@ -46,12 +56,15 @@ def save_patient_ids_to_json(patient_ids, filename="classification_patients.json
     with open(filename, "w") as f:
         json.dump(data, f, indent=4)
 
+
 # Question 1: Data-Wrangling & Basic Data Presentation
 def process_wbc_data(exam_df):
     """Process White Blood Cell (WBC) data for Question 1.1."""
     wbc_df = exam_df[exam_df["measurement"] == "White Blood Cell Count"]
     return wbc_df
 
+
+# Plot the distribution of White Blood Cell counts for Question 1.1
 def plot_wbc_distribution(wbc_df):
     """Plot the distribution of White Blood Cell counts for Question 1.1."""
     plt.figure(figsize=(8, 5))
@@ -61,6 +74,7 @@ def plot_wbc_distribution(wbc_df):
     plt.title("Distribution of White Blood Cell Counts")
     plt.grid(axis="y", alpha=0.75)
     plt.show()
+
 
 # Question 2: Accurate Predictions
 def prepare_data_for_model(patient_df, exam_df, study_df):
@@ -74,17 +88,62 @@ def prepare_data_for_model(patient_df, exam_df, study_df):
     # Convert 'gender' to numeric
     patient_df["gender"] = patient_df["gender"].map({"male": 0, "female": 1})
 
-    # Convert 'admission_date' to days since a reference date
-    reference_date = datetime(2017, 1, 1)
-    patient_df["admission_date"] = pd.to_datetime(patient_df["admission_date"])
-    patient_df["admission_date"] = (
-        patient_df["admission_date"] - reference_date
-    ).dt.days
-
-    # Handle 'do_not_resuscitate' column
-    patient_df["do_not_resuscitate"] = (
-        patient_df["do_not_resuscitate"].fillna(-1).astype(int)
+    # One-hot encode 'disease_category' and 'disease_class'
+    disease_category_dummies = pd.get_dummies(
+        patient_df["disease_category"], prefix="disease_category"
     )
+    disease_class_dummies = pd.get_dummies(
+        patient_df["disease_class"], prefix="disease_class"
+    )
+    patient_df = pd.concat(
+        [patient_df, disease_category_dummies, disease_class_dummies], axis=1
+    ).drop(["disease_category", "disease_class"], axis=1)
+
+    # Convert 'do_not_resuscitate' to numeric
+    patient_df["do_not_resuscitate"] = (
+        patient_df["do_not_resuscitate"].fillna(0).astype(int)
+    )
+
+    # One-hot encode 'income_bracket'
+    income_bracket_dummies = pd.get_dummies(
+        study_df["income_bracket"], prefix="income_bracket"
+    )
+    study_df = pd.concat([study_df, income_bracket_dummies], axis=1).drop(
+        "income_bracket", axis=1
+    )
+
+    # Create a copy of exam_df to avoid SettingWithCopyWarning
+    exam_df_copy = exam_df.copy()
+
+    # Convert 'Has Cancer', 'Has Dementia', and 'Has Diabetes' to numeric
+    for measurement in ["Has Cancer", "Has Dementia", "Has Diabetes"]:
+        if measurement in exam_df_copy["measurement"].unique():
+            if measurement == "Has Cancer":
+                exam_df_copy["has_cancer_no"] = (
+                    exam_df_copy[exam_df_copy["measurement"] == measurement]["value"]
+                    == "no"
+                ).astype(int)
+                exam_df_copy["has_cancer_yes"] = (
+                    exam_df_copy[exam_df_copy["measurement"] == measurement]["value"]
+                    == "yes"
+                ).astype(int)
+                exam_df_copy["has_cancer_metastatic"] = (
+                    exam_df_copy[exam_df_copy["measurement"] == measurement]["value"]
+                    == "metastatic"
+                ).astype(int)
+            else:
+                exam_df_copy.loc[
+                    exam_df_copy["measurement"] == measurement, measurement
+                ] = (
+                    exam_df_copy.loc[
+                        exam_df_copy["measurement"] == measurement, "value"
+                    ]
+                    .fillna(0)
+                    .astype(int)
+                )
+        else:
+            print(f"Warning: {measurement} not found in PatientExamination table.")
+            exam_df_copy[measurement] = np.nan
 
     # Extract features from PatientExamination
     measurements = [
@@ -92,16 +151,25 @@ def prepare_data_for_model(patient_df, exam_df, study_df):
         "Bilirubin Level",
         "Blood Urea Nitrogen",
         "Glucose",
+        "Has Dementia",
+        "Has Diabetes",
         "Heart Rate",
         "Mean Arterial Blood Pressure",
+        "Number of Comorbidities",
+        "P/F Ratio",
         "Respiration Rate",
         "Serum Albumin",
         "Serum Creatinine Level",
+        "Serum Sodium Concentration",
+        "SPS Score",
+        "Temperature",
+        "Urine Output",
         "White Blood Cell Count",
     ]
-    extracted_features = pd.DataFrame(index=exam_df["patient_id"].unique())
+
+    extracted_features = pd.DataFrame(index=exam_df_copy["patient_id"].unique())
     for measurement in measurements:
-        temp_df = exam_df[exam_df["measurement"] == measurement].pivot(
+        temp_df = exam_df_copy[exam_df_copy["measurement"] == measurement].pivot(
             index="patient_id", columns="measurement", values="value"
         )
         extracted_features = extracted_features.join(temp_df, how="outer")
@@ -117,43 +185,79 @@ def prepare_data_for_model(patient_df, exam_df, study_df):
     )
     df = pd.merge(df, study_df, left_on="id", right_on="patient_id", how="left")
 
-    # Remove rows with missing values
-    print("Number of patients before removing missing values:", df.shape[0])
-    #df = df.dropna()
-    print("Number of patients after removing missing values:", df.shape[0])
+    # Merge 'Has Cancer' columns
+    df = pd.merge(
+        df,
+        exam_df_copy.groupby("patient_id")[
+            ["has_cancer_no", "has_cancer_yes", "has_cancer_metastatic"]
+        ].max(),
+        left_on="id",
+        right_index=True,
+        how="left",
+    )
+    # Exclude columns related to post-hospital visit data
+    post_visit_columns = [
+        "death_recorded_after_hospital_discharge",
+        "days_of_follow_up",
+    ]
+    df = df.drop(columns=post_visit_columns, errors="ignore")
 
     return df
 
+
+# Question 2: Model Training and Evaluation
 def train_and_evaluate_model(df):
     """Train the model and evaluate its performance with enhanced checks for feature relevance and model complexity."""
     # Define the features to be included in the model
     features = [
+        "age",
+        "gender",
+        "doctors_2_months_survival_prediction",
+        "doctors_6_months_survival_prediction",
+        "do_not_resuscitate",
+        "years_of_education",
+        "existing_models_2_months_survival_prediction",
+        "existing_models_6_months_survival_prediction",
+        "days_of_follow_up",
+        "days_in_hospital_before_study",
+        "arterial_blood_ph",
+        "bilirubin_level",
+        "blood_urea_nitrogen",
+        "glucose",
+        "has_cancer_no",
+        "has_cancer_yes",
+        "has_cancer_metastatic",
+        "has_dementia",
+        "has_diabetes",
+        "heart_rate",
+        "mean_arterial_blood_pressure",
+        "number_of_comorbidities",
+        "p/f_ratio",
+        "respiration_rate",
+        "serum_albumin",
+        "serum_creatinine_level",
+        "serum_sodium_concentration",
+        "sps_score",
+        "temperature",
+        "urine_output",
+        "white_blood_cell_count",
+    ] + [
         col
         for col in df.columns
-        if col
-        not in [
-            "id",
-            "patient_id",
-            "died_in_hospital",
-            "death_recorded_after_hospital_discharge",
-            "language",
-            "admission_date",
-            "patient_id_y",
-            "patient_id_x",
-            "language_Estonian",
-            "language_Finnish",
-            "language_Other",
-            "language_Russian",
-            "language_Swedish",
-        ]
+        if col.startswith(
+            ("language_", "disease_category_", "disease_class_", "income_bracket_")
+        )
     ]
+    # Exclude post-hospital visit columns from the features
+    post_visit_columns = [
+        "death_recorded_after_hospital_discharge",
+        "days_of_follow_up",
+    ]
+    features = [col for col in features if col not in post_visit_columns]
 
     # Prepare the feature matrix X and the target vector y
     X = df[features]
     y = df["died_in_hospital"]
-
-    # One-hot encode categorical features
-    X = pd.get_dummies(X)
 
     # Split the data into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(
@@ -181,34 +285,73 @@ def train_and_evaluate_model(df):
     feature_importances = pd.DataFrame(
         model.feature_importances_, index=X_train.columns, columns=["importance"]
     ).sort_values("importance", ascending=False)
-    print("Feature importances:\n", feature_importances)
+    print("Feature importances:\n", feature_importances.head())
 
-    # Model evaluation on the test set
-    predictions = model.predict(X_test)
-    print("Confusion Matrix:\n", confusion_matrix(y_test, predictions))
-    print("\nClassification Report:\n", classification_report(y_test, predictions))
+    return model, features, X_test, y_test
 
-    return model, X.columns.tolist(), X_test, y_test
+def print_confusion_matrix(y_true, y_pred):
+    cm = confusion_matrix(y_true, y_pred)
+    print("Confusion Matrix:")
+    print("True Negative (TN) | False Positive (FP)")
+    print("False Negative (FN)| True Positive (TP)")
+    print(cm)
+
+def plot_confusion_matrix(y_true, y_pred):
+    cm = confusion_matrix(y_true, y_pred)
+    plt.figure(figsize=(8, 5))
+    plt.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
+    plt.title("Confusion Matrix")
+    plt.colorbar()
+    # Include number of samples in each cell
+    for i in range(cm.shape[0]):
+        for j in range(cm.shape[1]):
+            plt.text(j, i, format(cm[i, j], 'd'), horizontalalignment="center", color="red")
+    tick_marks = np.arange(len(cm))
+    plt.xticks(tick_marks, ["Negative", "Positive"])
+    plt.yticks(tick_marks, ["Negative", "Positive"])
+    plt.xlabel("Predicted Label")
+    plt.ylabel("True Label")
+    plt.show()
+
+def calculate_error_rates(y_true, y_pred):
+    cm = confusion_matrix(y_true, y_pred)
+    tn, fp, fn, tp = cm.ravel()
+    type_1_error_rate = fp / (fp + tn)
+    type_2_error_rate = fn / (fn + tp)
+    return type_1_error_rate, type_2_error_rate
 
 
-def update_json_with_predictions(json_data, predictions, wbc_counts, key_name):
+# Update JSON file with predictions and WBC counts for Question 2.3 and 3.2
+def update_json_with_predictions(
+    json_data,
+    predictions,
+    profit_predictions,
+    wbc_counts,
+    accuracy_key_name,
+    profit_key_name,
+):
     if isinstance(json_data, list):
         for i, patient in enumerate(json_data):
             if i < len(predictions):
-                patient[key_name] = int(predictions[i])
-                if pd.notna(wbc_counts[i]):
-                    patient["white_blood_cell_count"] = round(float(wbc_counts[i]))
-                else:
-                    patient["white_blood_cell_count"] = None
+                patient[accuracy_key_name] = int(predictions[i])
             else:
-                patient[key_name] = None  # Set missing predictions to None
+                patient[accuracy_key_name] = None  # Set missing predictions to None
+
+            if i < len(profit_predictions):
+                patient[profit_key_name] = int(profit_predictions[i])
+            else:
+                patient[profit_key_name] = None  # Set missing predictions to None
+
+            if i < len(wbc_counts) and pd.notna(wbc_counts[i]):
+                patient["white_blood_cell_count"] = round(float(wbc_counts[i]))
+            else:
                 patient["white_blood_cell_count"] = None
     else:
         print("json_data is not in the expected format.")
     return json_data
 
 
-#Question 3: Applied Learnings and Building a Case
+# Question 3: Maximizing Profit
 def maximize_profit(model, X_test):
     """Maximize KindCorp's profit by offloading claims to EvilCorp."""
     probabilities = model.predict_proba(X_test)[:, 1]
@@ -220,6 +363,8 @@ def maximize_profit(model, X_test):
     classifications = (probabilities >= optimal_threshold).astype(int)
     return classifications, optimal_threshold
 
+
+# Plot the cumulative profit curve for Question 3.1
 def plot_cumulative_profit(model, X_test):
     """Plot the cumulative profit curve."""
     probabilities = model.predict_proba(X_test)[:, 1]
@@ -234,18 +379,23 @@ def plot_cumulative_profit(model, X_test):
     plt.grid(alpha=0.75)
     plt.show()
 
+
+# Calculate costs for different strategies for Question 3.3
 def calculate_costs(model, X_test, y_test):
     """Calculate the costs for different strategies."""
     cost_of_doing_nothing = -500000 * y_test.sum()
     cost_of_selling_all = -150000 * len(y_test)
     classifications, _ = maximize_profit(model, X_test)
     cost_of_profit_model = (
-    -500000 * (y_test * (1 - classifications)).sum()
-    - 150000 * classifications.sum()
+        -500000 * (y_test * (1 - classifications)).sum()
+        - 150000 * classifications.sum()
     )
+
     savings = cost_of_profit_model - min(cost_of_doing_nothing, cost_of_selling_all)
     return cost_of_doing_nothing, cost_of_selling_all, cost_of_profit_model, savings
 
+
+# Plot the sensitivity analysis of profitability for Question 3.4
 def plot_sensitivity_analysis(model, X_test, y_test):
     """Plot the sensitivity analysis of profitability."""
     error_rates = np.linspace(0, 1, 100)
@@ -256,6 +406,7 @@ def plot_sensitivity_analysis(model, X_test, y_test):
         simulated_predictions[y_test == 0] = np.random.choice(
             [0, 1], size=np.sum(y_test == 0), p=[1 - error_rate, error_rate]
         )
+
         simulated_predictions[y_test == 1] = np.random.choice(
             [0, 1], size=np.sum(y_test == 1), p=[error_rate, 1 - error_rate]
         )
@@ -276,13 +427,17 @@ def plot_sensitivity_analysis(model, X_test, y_test):
     plt.show()
 
 
+# Main function to execute the entire pipeline
 def main():
     cnx = connect_to_database()
     if cnx is not None:
-       # Fetch data from each table once and print their column names
         patient_df = fetch_data(cnx, "Patient")
-        admitted_patient_ids = identify_admitted_patients(patient_df)
+        admitted_patient_df = identify_admitted_patients(
+            cnx
+        )  # Pass cnx instead of patient_df
+        admitted_patient_ids = admitted_patient_df["patient_id"].tolist()
         save_patient_ids_to_json(admitted_patient_ids)
+        print(f"Admitted patient IDs saved to classification_patients.json")
         print(f"Admitted patient IDs saved to classification_patients.json")
 
         exam_df = fetch_data(cnx, "PatientExamination")
@@ -298,7 +453,9 @@ def main():
         plot_wbc_distribution(wbc_df)
 
         # Prepare data and train model for Question 2
-        df = prepare_data_for_model(admitted_patient_df, admitted_exam_df, admitted_study_df)
+        df = prepare_data_for_model(
+            admitted_patient_df, admitted_exam_df, admitted_study_df
+        )
 
         # Load patient IDs from the JSON file
         with open("classification_patients.json", "r") as f:
@@ -309,55 +466,67 @@ def main():
         df_filtered = df[df["id"].isin(patient_ids)]
         print("Number of patients in the filtered dataframe:", df_filtered.shape[0])
 
-
         # Extract WBC counts for the filtered patients
-        wbc_counts = df_filtered["white_blood_cell_count"].tolist()
+        wbc_counts = df_filtered.loc[
+            df_filtered["id"].isin(patient_ids), "white_blood_cell_count"
+        ].tolist()
 
-        model_results = train_and_evaluate_model(df_filtered)
-
-        if model_results is None:
-            print("Insufficient samples for training and evaluation. Skipping further analysis.")
-            return
-
-        model, features, X_test, y_test = model_results
+        # Train and evaluate the model
+        model, features, X_test, y_test = train_and_evaluate_model(df_filtered)
+        print("Selected features:", features)
 
         # Evaluate model performance for Question 2.2
         predictions = model.predict(X_test)
-        print("Confusion Matrix:\n", confusion_matrix(y_test, predictions))
+        print_confusion_matrix(y_test, predictions)
+        type_1_error_rate, type_2_error_rate = calculate_error_rates(y_test, predictions)
+        print("Type 1 Error Rate:", type_1_error_rate)
+        print("Type 2 Error Rate:", type_2_error_rate)
         print("\nClassification Report:\n", classification_report(y_test, predictions))
+        plot_confusion_matrix(y_test, predictions)
 
-        # Update JSON file with predictions and WBC counts for Question 2.3
+        # Maximize profit and get profitability-based classifications for Question 3.2
+        profit_classifications, optimal_threshold = maximize_profit(model, X_test)
+        print("Optimal threshold:", optimal_threshold)
+
+        # Update JSON file with predictions and WBC counts for Question 2.3 and 3.2
         updated_json = update_json_with_predictions(
-            json_data, predictions, wbc_counts, "prediction_accuracy_model"
+            json_data,
+            predictions,
+            profit_classifications,
+            wbc_counts,
+            "prediction_accuracy_model",
+            "prediction_profit_model",
         )
         with open("assignment2_updated.json", "w") as f:
             json.dump(updated_json, f, indent=4)
 
-        # Question 3.1: Maximize profit and present model performance
-        classifications, optimal_threshold = maximize_profit(model, X_test)
+        # Plot cumulative profit curve for Question 3.1
         plot_cumulative_profit(model, X_test)
-        print(f"Optimal threshold for maximizing profit: {optimal_threshold:.2f}")
 
-        # Question 3.2: Update JSON file with profitability classifications and WBC counts
-        updated_json = update_json_with_predictions(
-            json_data, classifications, wbc_counts, "prediction_profit_model"
-        )
-        with open("assignment2_updated.json", "w") as f:
-            json.dump(updated_json, f, indent=4)
-
-        # Question 3.3: Calculate and present costs for different strategies
+        # Calculate costs for different strategies for Question 3.3
         cost_of_doing_nothing, cost_of_selling_all, cost_of_profit_model, savings = (
             calculate_costs(model, X_test, y_test)
         )
-        print("Costs for different strategies:")
-        print(f"Cost of Doing Nothing: €{-cost_of_doing_nothing/1e6:.2f} million")
-        print(f"Cost of Selling All Claims: €{-cost_of_selling_all/1e6:.2f} million")
         print(
-            f"Cost When Using Profit Maximization Model: €{-cost_of_profit_model/1e6:.2f} million"
+            "Cost of Doing Nothing: €{:.2f} million".format(
+                cost_of_doing_nothing / 1000000
+            )
         )
-        print(f"Estimated Savings to KindCorp: €{savings/1e6:.2f} million")
+        print(
+            "Cost of Selling All Claims: €{:.2f} million".format(
+                cost_of_selling_all / 1000000
+            )
+        )
+        print(
+            "Cost When Using Profit Maximization Model: €{:.2f} million".format(
+                cost_of_profit_model / 1000000
+            )
+        )
+        print(
+            "Estimated Savings to KindCorp: €{:.2f} million".format(savings / 1000000)
+        )
 
-        # Question 3.4: Sensitivity analysis of profitability
+        # Plot sensitivity analysis for Question 3.4
         plot_sensitivity_analysis(model, X_test, y_test)
 
 
