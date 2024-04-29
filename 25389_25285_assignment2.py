@@ -38,13 +38,10 @@ def fetch_data(cnx, table_name):
 def identify_admitted_patients(cnx):
     """Identify patients currently admitted and in need of classification."""
     query = """
-        SELECT p.id AS patient_id
-        FROM Patient p
-        LEFT JOIN Study s ON p.id = s.patient_id
-        LEFT JOIN PatientExamination pe ON p.id = pe.patient_id
-        WHERE p.days_before_discharge > 0
-          AND pe.patient_id IS NOT NULL
-          AND p.admission_date IS NOT NULL
+    SELECT DISTINCT p.id AS patient_id
+    FROM Patient p
+    INNER JOIN PatientExamination pe ON p.id = pe.patient_id
+    WHERE p.days_before_discharge > 0
     """
     admitted_df = pd.read_sql(query, cnx)
     return admitted_df
@@ -330,25 +327,16 @@ def update_json_with_predictions(
     accuracy_key_name,
     profit_key_name,
 ):
-    if isinstance(json_data, list):
-        for i, patient in enumerate(json_data):
-            if i < len(predictions):
-                patient[accuracy_key_name] = int(predictions[i])
-            else:
-                patient[accuracy_key_name] = None  # Set missing predictions to None
-
-            if i < len(profit_predictions):
-                patient[profit_key_name] = int(profit_predictions[i])
-            else:
-                patient[profit_key_name] = None  # Set missing predictions to None
-
-            if i < len(wbc_counts) and pd.notna(wbc_counts[i]):
-                patient["white_blood_cell_count"] = round(float(wbc_counts[i]))
-            else:
-                patient["white_blood_cell_count"] = None
-    else:
-        print("json_data is not in the expected format.")
-    return json_data
+    updated_json = []
+    for i, patient in enumerate(json_data):
+        patient_data = {
+            "patient_id": patient["patient_id"],
+            accuracy_key_name: int(predictions[i]) if i < len(predictions) else None,
+            "white_blood_cell_count": round(float(wbc_counts[i])) if i < len(wbc_counts) and pd.notna(wbc_counts[i]) else None,
+            profit_key_name: int(profit_predictions[i]) if i < len(profit_predictions) else None,
+        }
+        updated_json.append(patient_data)
+    return updated_json
 
 
 # Question 3: Maximizing Profit
@@ -490,15 +478,15 @@ def main():
 
         # Update JSON file with predictions and WBC counts for Question 2.3 and 3.2
         updated_json = update_json_with_predictions(
-            json_data,
-            predictions,
-            profit_classifications,
-            wbc_counts,
-            "prediction_accuracy_model",
-            "prediction_profit_model",
-        )
-        with open("assignment2_updated.json", "w") as f:
-            json.dump(updated_json, f, indent=4)
+        json_data,
+        predictions,
+        profit_classifications,
+        wbc_counts,
+        "prediction_accuracy_model",
+        "prediction_profit_model",
+    )
+    with open("25389_25285_assignment2.json", "w") as f:
+        json.dump(updated_json, f, indent=4)
 
         # Plot cumulative profit curve for Question 3.1
         plot_cumulative_profit(model, X_test)

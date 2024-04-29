@@ -20,4 +20,4 @@ def compare_patient_ids(file1_path, file2_path):
                 print()
 
 # Usage example
-compare_patient_ids('25389_25285_assignment2.json', 'assignment2_updated.json')
+compare_patient_ids('25389_25285_assignment2.json', 'patients.json')
